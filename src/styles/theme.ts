@@ -1,5 +1,6 @@
 
 export const blueDarkTheme = {   
+    NAME: "blueDarkTheme",
     COLORS: {
         WHITE: "#FFF",
         BACK_001: "#AABCD0",
@@ -10,6 +11,7 @@ export const blueDarkTheme = {
 }
         
 export const orangeTheme = {
+    NAME: "orangeTheme",
     COLORS: {
         WHITE: "#FFF",
         BACK_001: "#CCC6BA",
@@ -20,6 +22,7 @@ export const orangeTheme = {
 }
 
 export const blueLightTheme = {
+    NAME: "blueLightTheme",
     COLORS: {
         WHITE: "#FFF",
         BACK_001: "#F4F3EE",
