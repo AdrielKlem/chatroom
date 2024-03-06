@@ -1,11 +1,14 @@
 import { Container } from "./styles"
+import { Button } from "../../components/Button"
 
 
 export function LognIn() {
     return (
         <Container>
             <h1>Trocar o Estilo</h1>
-            <button>Clicar</button>
+            <Button 
+                text={"Trocar"}
+            />
         </Container>
     )
 }

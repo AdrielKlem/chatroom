@@ -1,10 +1,13 @@
 import { Container } from "./styles"
 
+interface Props {
+    text: string
+}
 
-export function Button() {
+export function Button({ text }: Props) {
     return(
         <Container>
-            Clicar aqui
+            {text ?? "Insira texto aqui"}
         </Container>
     )
 }
