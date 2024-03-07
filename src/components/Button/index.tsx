@@ -4,9 +4,9 @@ interface Props {
     text: string
 }
 
-export function Button({ text }: Props) {
+export function Button({ text, ...rest }: Props) {
     return(
-        <Container>
+        <Container {...rest}>
             {text ?? "Insira texto aqui"}
         </Container>
     )
