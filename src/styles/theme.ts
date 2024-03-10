@@ -4,9 +4,9 @@ export const blueDarkTheme = {
     COLORS: {
         WHITE: "#FFF",
         BACK_001: "#AABCD0",
-        BACK_002: "#00d6d6",
+        BACK_002: "#131E2F",
         BACK_003: "#000",
-        COLOR_ACTION: "#01AB5B1",
+        COLOR_ACTION: "#00d6d6",
     }
 }
         
