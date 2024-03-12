@@ -1,5 +1,5 @@
 
-export const blueDarkTheme = {   
+const blueDarkTheme = {   
     NAME: "blueDarkTheme",
     COLORS: {
         WHITE: "#FFF",
@@ -10,7 +10,7 @@ export const blueDarkTheme = {
     }
 }
         
-export const orangeTheme = {
+const orangeTheme = {
     NAME: "orangeTheme",
     COLORS: {
         WHITE: "#FFF",
@@ -21,7 +21,7 @@ export const orangeTheme = {
     }
 }
 
-export const blueLightTheme = {
+const blueLightTheme = {
     NAME: "blueLightTheme",
     COLORS: {
         WHITE: "#FFF",
@@ -30,4 +30,10 @@ export const blueLightTheme = {
         BACK_003: "#000",
         COLOR_ACTION: "#3A89FF",
     }
+}
+
+export default {
+    blueDarkTheme,
+    orangeTheme,
+    blueLightTheme
 }

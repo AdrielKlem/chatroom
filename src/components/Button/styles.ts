@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Container = styled.button`
-    background-color: #00d6d6;
+    background-color: ${({ theme }) => theme.COLORS.COLOR_ACTION};
 
     margin: 0 auto;
     padding: 1.2rem;
