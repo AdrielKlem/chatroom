@@ -1,9 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-  :root {
-    background: #000;
-    
+  :root {  
     font-size: 62.5%;
   }
 
@@ -22,15 +20,16 @@ export default createGlobalStyle`
   }
 
   body {
+    background-color: ${({ theme }) => theme.COLORS.BACK_002};
+    transition: all .5s;
     width: 100%;
-    background: #000;
   }
 
   h1 {
     width: 100%;
     margin: 50px 0;
     text-align: center;
-    color: #fff 
+    color: ${({ theme }) => theme.COLORS.WHITE}; 
   }
 `
 /*${props => props.theme.colors.black};*/

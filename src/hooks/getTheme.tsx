@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useState } from "react";
-import { ThemeContext, ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 
 import Theme from "../styles/theme"
 
@@ -26,14 +26,16 @@ export const useTheme = () => useContext(themeContext)
 export function CustomThemeProvider({ children }: any) {
     const [theme, setTheme] = useState<ThemeData>(Theme.blueDarkTheme)
 
-    console.log(Theme)
-    console.log(Theme.blueDarkTheme)
-    console.log(Theme.blueLightTheme)
-    console.log(Theme.orangeTheme)
-    console.log(theme)
-
     const toggleTheme = useCallback(() => {
-        setTheme(Theme.orangeTheme)
+        switch(theme.NAME) {
+            case "blueDarkTheme": setTheme(Theme.orangeTheme)
+                break
+            case "orangeTheme": setTheme(Theme.blueLightTheme)
+                break
+            case "blueLightTheme": setTheme(Theme.blueDarkTheme)
+                break
+            default: setTheme(Theme.blueDarkTheme)
+        } 
     }, [theme])
     
     return (
