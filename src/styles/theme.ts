@@ -6,7 +6,7 @@ const blueDarkTheme = {
         BACK_001: "#AABCD0",
         BACK_002: "#131E2F",
         BACK_003: "#000",
-        COLOR_ACTION: "#00d6d6",
+        COLOR_ACTION: "#3A89FF",
     }
 }
         
@@ -28,7 +28,7 @@ const blueLightTheme = {
         BACK_001: "#F4F3EE",
         BACK_002: "#131E2F",
         BACK_003: "#000",
-        COLOR_ACTION: "#3A89FF",
+        COLOR_ACTION: "#00d6d6",
     }
 }
 
