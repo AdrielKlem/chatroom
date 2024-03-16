@@ -3,7 +3,7 @@ import { Button } from "../../components/Button"
 import { useTheme } from "../../hooks/getTheme"
 
 
-export function LognIn() {
+export function CustomTheme() {
     const { toggleTheme } = useTheme()
 
     const handleToggleTheme = () => toggleTheme()

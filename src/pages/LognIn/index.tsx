@@ -1,20 +1,12 @@
 import { Container } from "./styles"
-import { Button } from "../../components/Button"
-import { useTheme } from "../../hooks/getTheme"
+import { Input } from "../../components/Input"
 
 
 export function LognIn() {
-    const { toggleTheme } = useTheme()
-
-    const handleToggleTheme = () => toggleTheme()
-
-
     return (
         <Container>
             <h1>Trocar o Estilo</h1>
-            <Button 
-                text={"Trocar"}
-                onClick={handleToggleTheme}
+            <Input
             />
         </Container>
     )

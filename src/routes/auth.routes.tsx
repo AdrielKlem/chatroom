@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 
-import { LognIn } from '../pages/CustomTheme'
+import { LognIn } from '../pages/LognIn'
 
 export function AuthRoutes() {
     return(
