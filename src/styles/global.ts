@@ -32,4 +32,3 @@ export default createGlobalStyle`
     color: ${({ theme }) => theme.COLORS.WHITE}; 
   }
 `
-/*${props => props.theme.colors.black};*/

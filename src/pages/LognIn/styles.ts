@@ -6,8 +6,8 @@ export const Container = styled.div`
 
     margin: 8.5rem auto 0;
     padding: 1.2rem;
-    height: 70vh;
-    width: 76rem;
+    height: 80vh;
+    max-width: 76rem;
 
     border-radius: 5rem;
 
