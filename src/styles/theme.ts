@@ -1,4 +1,3 @@
-
 const blueDarkTheme = {   
     NAME: "blueDarkTheme",
     COLORS: {
