@@ -14,10 +14,12 @@ interface ThemeData {
     colors: {
         primaryBackground: string,
         secondaryBackground: string,
+        thirdBackground: string,
         textColor: string,
         actionColor: string,
         primaryColor: string,
         secondaryColor: string,
+        thirdColor: string,
     }
 }
 
