@@ -1,33 +1,40 @@
+// Constantes globais
+export const whiteColor = "#FFF";
+
+// Definição dos temas
 const blueDarkTheme = {   
-    NAME: "blueDarkTheme",
-    COLORS: {
-        WHITE: "#FFF",
-        BACK_001: "#AABCD0",
-        BACK_002: "#131E2F",
-        BACK_003: "#000",
-        COLOR_ACTION: "#3A89FF",
+    name: "blueDarkTheme",
+    colors: {
+        primaryBackground: "#AABCD0",
+        secondaryBackground: "#131E2F",
+        textColor: "#000",
+        actionColor: "#3A89FF",
+        primaryColor: "#4285F4",
+        secondaryColor: "#738FFE",
     }
 }
         
 const orangeTheme = {
-    NAME: "orangeTheme",
-    COLORS: {
-        WHITE: "#FFF",
-        BACK_001: "#CCC6BA",
-        BACK_002: "#3F3C37",
-        BACK_003: "#201F1B",
-        COLOR_ACTION: "#FF5E1E",
+    name: "orangeTheme",
+    colors: {
+        primaryBackground: "#CCC6BA",
+        secondaryBackground: "#3F3C37",
+        textColor: "#201F1B",
+        actionColor: "#FF5E1E",
+        primaryColor: "#FF9100",
+        secondaryColor: "#FFC107",
     }
 }
 
 const blueLightTheme = {
-    NAME: "blueLightTheme",
-    COLORS: {
-        WHITE: "#FFF",
-        BACK_001: "#F4F3EE",
-        BACK_002: "#131E2F",
-        BACK_003: "#000",
-        COLOR_ACTION: "#00d6d6",
+    name: "blueLightTheme",
+    colors: {
+        primaryBackground: "#F4F3EE",
+        secondaryBackground: "#131E2F",
+        textColor: "#000",
+        actionColor: "#00d6d6",
+        primaryColor: "#2962FF",
+        secondaryColor: "#81C784",
     }
 }
 

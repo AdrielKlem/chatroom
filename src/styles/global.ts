@@ -5,7 +5,6 @@ export default createGlobalStyle`
     font-size: 62.5%;
   }
 
-
   * {
     margin: 0;
     padding: 0;
@@ -20,7 +19,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.COLORS.BACK_002};
+    background-color: ${({ theme }) => theme.colors.secondaryBackground};
     transition: all .5s;
     width: 100%;
   }
@@ -29,6 +28,6 @@ export default createGlobalStyle`
     width: 100%;
     margin: 50px 0;
     text-align: center;
-    color: ${({ theme }) => theme.COLORS.WHITE}; 
+    color: ${({ theme }) => theme.colors.whiteColor}; 
   }
 `
