@@ -6,7 +6,7 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 1.6rem;
 
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    color: ${({ theme }) => theme.colors.whiteColor};
 `
 
 export const InputElement = styled.input`
@@ -14,17 +14,17 @@ export const InputElement = styled.input`
     width: 100%;
     padding: 12px;
 
-    color: ${({ theme }) => theme.COLORS.WHITE};
-    background-color: ${({ theme }) => theme.COLORS.BACK_002};
+    color: ${({ theme }) => theme.colors.whiteColor};
+    background-color: ${({ theme }) => theme.colors.secondaryBackground};
     border: none;
     border-radius: 10px;
 
     &:placeholder {
-        color: ${({ theme }) => theme.COLORS.GRAY_300};
-        font-size: clamp(0.8rem, 2vw + 0.6rem, 1.6rem);
+        color: ${({ theme }) => theme.colors.secondaryBackground};
+        font-size: clamp(0.2rem, 1vw + 0.5rem, 1.6rem);
     }
 `
 
 export const Label = styled.label`
-    font-size: clamp(0.8rem, 2vw + 0.6rem, 1.6rem);
+    font-size: clamp(0.2rem, 1vw + 0.5rem, 1.6rem);
 `

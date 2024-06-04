@@ -26,7 +26,6 @@ export default createGlobalStyle`
 
   h1 {
     width: 100%;
-    margin: 50px 0;
     text-align: center;
     color: ${({ theme }) => theme.colors.whiteColor}; 
   }
