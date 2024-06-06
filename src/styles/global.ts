@@ -29,4 +29,9 @@ export default createGlobalStyle`
     text-align: center;
     color: ${({ theme }) => theme.colors.whiteColor}; 
   }
+
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.primaryColor};
+  }
 `

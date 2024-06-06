@@ -42,7 +42,16 @@ export const Form = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1.6rem;
+
     padding: 0 4rem;
     margin: 0 0 1.6rem;
-    justify-content: space-around;
+
+    > a {
+        transition: transform 0.5s ease-out;
+   
+        &:hover {
+                transform: scale(1.1);
+        }
+    }
 `

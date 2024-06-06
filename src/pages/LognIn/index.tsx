@@ -2,6 +2,8 @@ import { Container, Form, FormSection } from "./styles"
 import { Input } from "../../components/Input"
 import { Button } from "../../components/Button"
 
+import { Link } from "react-router-dom"
+
 
 export function LognIn() {
     return (
@@ -25,6 +27,9 @@ export function LognIn() {
                     <Button
                         text="Conectar"
                         />
+                    <Link to="register">
+                        Não tem conta? Clica aqui!
+                    </Link>
                 </Form>
             </FormSection>
         </Container>
