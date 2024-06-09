@@ -10,21 +10,21 @@ export const Container = styled.div`
 `
 
 export const InputElement = styled.input`
-    height: 56px;
+    height: 3.6rem;
     width: 100%;
-    padding: 12px;
+    padding: 0 1.2rem;
 
     color: ${({ theme }) => theme.colors.whiteColor};
     background-color: ${({ theme }) => theme.colors.secondaryBackground};
     border: none;
-    border-radius: 10px;
+    border-radius: 1rem;
 
-    &:placeholder {
-        color: ${({ theme }) => theme.colors.secondaryBackground};
-        font-size: clamp(0.2rem, 1vw + 0.5rem, 1.6rem);
+    &::placeholder {
+        color: ${({ theme }) => theme.colors.thirdColor};
+        font-size: .8rem;
     }
 `
 
 export const Label = styled.label`
-    font-size: clamp(0.2rem, 1vw + 0.5rem, 1.6rem);
+    font-size: clamp(.1rem, 1vw + .3rem, 1.6rem);
 `
