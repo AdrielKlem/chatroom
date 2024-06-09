@@ -5,7 +5,7 @@ import { Button } from "../../components/Button"
 import { Link } from "react-router-dom"
 
 
-export function LognIn() {
+export function LogIn() {
     return (
         <Container>
             <FormSection>

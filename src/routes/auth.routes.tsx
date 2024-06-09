@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
 
-import { LognIn } from '../pages/LognIn'
+import { LogIn } from '../pages/LogIn'
 
 export function AuthRoutes() {
     return(
         <Routes>
-            <Route path='/' element={<LognIn />} />
+            <Route path='/' element={<LogIn />} />
         </Routes>
     )
 }
