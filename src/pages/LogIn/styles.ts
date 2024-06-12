@@ -12,15 +12,13 @@ export const Container = styled.div`
 export const FormSection = styled.div `
     background-color: ${({ theme }) => theme.colors.thirdBackground};
     
-    min-width: 38rem;
-
+    min-width: 48rem;
+    min-height: 48rem;
     border-radius: 5rem;
-
     display: flex;
-
     flex-direction: column;
     align-items: center;
-    gap: 1.6rem;
+    gap: 2.4rem;
 
     .heading {
         background-color: ${({ theme }) => theme.colors.primaryBackground};
@@ -28,7 +26,7 @@ export const FormSection = styled.div `
         border-radius: 5rem 5rem 0 0;
 
         > h1 {
-            margin: 2.4rem 0;
+            margin: 1.8rem 0;
             color: ${({ theme }) => theme.colors.primaryColor};
             font-size: 1.8rem;
         }
@@ -37,8 +35,6 @@ export const FormSection = styled.div `
 
 export const Form = styled.div`
     width: 100%;
-    min-height: 25rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;

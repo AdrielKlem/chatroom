@@ -4,7 +4,7 @@ export const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
+    gap: .4rem;
 
     color: ${({ theme }) => theme.colors.whiteColor};
 `
@@ -26,5 +26,5 @@ export const InputElement = styled.input`
 `
 
 export const Label = styled.label`
-    font-size: clamp(.1rem, 1vw + .3rem, 1.6rem);
+    font-size: clamp(.6rem, 2vw + .6rem, 1.6rem);
 `
