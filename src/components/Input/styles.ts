@@ -10,7 +10,7 @@ export const Container = styled.div`
 `
 
 export const InputElement = styled.input`
-    height: 3.6rem;
+    height: 6.4rem;
     width: 100%;
     padding: 0 1.2rem;
 
@@ -21,10 +21,10 @@ export const InputElement = styled.input`
 
     &::placeholder {
         color: ${({ theme }) => theme.colors.thirdColor};
-        font-size: .8rem;
+        font-size: 1.6rem;
     }
 `
 
 export const Label = styled.label`
-    font-size: clamp(.6rem, 2vw + .6rem, 1.6rem);
+    font-size: clamp(.6rem, 2vw + .6rem, 2.4rem);
 `
