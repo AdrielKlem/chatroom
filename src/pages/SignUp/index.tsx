@@ -1,4 +1,4 @@
-import { Container, Form, FormSection } from "../LogIn/styles"
+import { Container, Form, FormSection } from "./styles"
 import { Input } from "../../components/Input"
 import { Button } from "../../components/Button"
 

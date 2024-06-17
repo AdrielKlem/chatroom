@@ -6,7 +6,7 @@ export const Container = styled.button`
 
     margin: 0 auto;
     padding: 1.6rem;
-    font-size: 2.4rem;
+    font-size: 1.6rem;
 
     border-radius: 1.2rem;
     

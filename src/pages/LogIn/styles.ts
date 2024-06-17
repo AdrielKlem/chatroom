@@ -18,7 +18,7 @@ export const FormSection = styled.div `
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.4rem;
+    gap: 6.4rem;
 
     .heading {
         background-color: ${({ theme }) => theme.colors.primaryBackground};
@@ -38,7 +38,7 @@ export const Form = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.6rem;
+    gap: 4rem;
 
     padding: 0 4rem;
     margin: 0 0 1.6rem;
