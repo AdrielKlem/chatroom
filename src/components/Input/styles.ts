@@ -28,3 +28,7 @@ export const InputElement = styled.input`
 export const Label = styled.label`
     font-size: clamp(.6rem, 2vw + .6rem, 1.6rem);
 `
+
+export const EyeIcon = styled.div`
+
+`
