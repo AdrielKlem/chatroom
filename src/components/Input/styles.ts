@@ -11,7 +11,6 @@ export const Container = styled.div`
 
 export const InputWrapper = styled.div`
   height: 5.6rem;
-  width: 100%;
   padding: 0 1.2rem;
   
   display: flex;
@@ -23,6 +22,7 @@ export const InputWrapper = styled.div`
 `
 
 export const InputElement = styled.input`
+  width: 100%;
 
   color: ${({ theme }) => theme.colors.whiteColor};    
   background-color: transparent;
