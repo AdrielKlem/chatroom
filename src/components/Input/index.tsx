@@ -1,10 +1,11 @@
 import { InputHTMLAttributes, useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEyeSlash, faEye } from '@fortawesome/free-solid-svg-icons'
 
 import { Container, InputWrapper, InputElement, Label, EyeIcon } from "./styles"
 
-import EyeView from "../../assets/icons/view.png"
-import EyeHide from "../../assets/icons/hide.png"
-
+const EyeHide = <FontAwesomeIcon icon={faEyeSlash} />
+const EyeView = <FontAwesomeIcon icon={faEye} />
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
     label?: string
@@ -31,10 +32,7 @@ export function Input({ name = "", type = "text", ...props }: InputProps) {
                     />
                 {type === "password" && 
                     <EyeIcon onClick={handleToggleType} >
-                        <img
-                            src={eyeOpen ? EyeHide : EyeView}
-                            alt="Ícone de olho"
-                            />
+                        {eyeOpen ? EyeHide : EyeView}
                     </EyeIcon>
                 }
             </ InputWrapper>

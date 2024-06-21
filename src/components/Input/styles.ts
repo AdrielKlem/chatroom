@@ -40,10 +40,19 @@ export const Label = styled.label`
 `
 
 export const EyeIcon = styled.i`
-
   
-  img {
+  
+  > svg {
     width: 2rem;
     height: 2rem;
+    color: ${({ theme }) => theme.colors.actionColor};
+
+    transition: ease .5s;
+    
+    &:hover {
+      position: relative;
+      transform: scale(1.2);
+
+    }
   }
 `;
