@@ -1,6 +1,6 @@
 import { InputHTMLAttributes, useState } from "react";
 
-import { Container, InputElement, Label, EyeIcon } from "./styles"
+import { Container, InputWrapper, InputElement, Label, EyeIcon } from "./styles"
 
 import EyeView from "../../assets/icons/view.png"
 import EyeHide from "../../assets/icons/hide.png"
@@ -23,19 +23,21 @@ export function Input({ name = "", type = "text", ...props }: InputProps) {
     return (
         <Container>
             <Label htmlFor={name}>{props.label}</Label>
-            <InputElement
-                type={inputType}
-                name={name}
-                {...props}
-            />
-            {type === "password" && 
-                <EyeIcon onClick={handleToggleType} >
-                    <img
-                        src={eyeOpen ? EyeHide : EyeView}
-                        alt="Ícone de olho"
+            <InputWrapper>
+                <InputElement
+                    type={inputType}
+                    name={name}
+                    {...props}
                     />
-                </EyeIcon>
-            }
+                {type === "password" && 
+                    <EyeIcon onClick={handleToggleType} >
+                        <img
+                            src={eyeOpen ? EyeHide : EyeView}
+                            alt="Ícone de olho"
+                            />
+                    </EyeIcon>
+                }
+            </ InputWrapper>
         </Container>
     )
 }
