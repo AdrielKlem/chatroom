@@ -29,7 +29,7 @@ export const Display = styled.div`
     }
 `
 
-export const Navigation = styled.aside`
+export const Menu = styled.aside`
     grid-area: A;
 `
 
