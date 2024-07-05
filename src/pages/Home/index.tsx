@@ -1,9 +1,13 @@
-import { Container } from "./styles"
+import { Container, Display, Navigation, Inbox, Chatting } from "./styles"
 
 export function Home() {
     return (
         <Container>
-            <h1>Hello World</h1>
+            <Display>
+                <Navigation />
+                <Inbox />
+                <Chatting></Chatting>
+            </Display>
         </Container>
     )
 }
