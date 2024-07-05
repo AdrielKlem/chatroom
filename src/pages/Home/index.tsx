@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMessage } from '@fortawesome/free-solid-svg-icons'
+import { faComments } from '@fortawesome/free-solid-svg-icons'
 
 import { Container, Display, Menu, Inbox, Chatting } from "./styles"
 import { ButtonNav } from "../../components/ButtonNav"
 
-const IconChat = <FontAwesomeIcon icon={faMessage} />
+const IconChat = <FontAwesomeIcon icon={faComments} />
 
 export function Home() {
     return (
