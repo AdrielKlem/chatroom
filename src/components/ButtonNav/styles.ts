@@ -15,7 +15,7 @@ export const Container = styled.button`
     transition: background-color .5s;
     
     color: ${({ theme }) => theme.colors.thirdColor};
-    font-size: 1.6em;
+    font-size: 1.6rem;
 
 
     &:hover {
