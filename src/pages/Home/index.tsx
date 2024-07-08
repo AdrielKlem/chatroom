@@ -17,6 +17,7 @@ export function Home() {
                     <ButtonNav
                         text="Chat"
                         icon={IconChat}
+                        isActive
                     />
                     <ButtonNav
                         text="Contatos"

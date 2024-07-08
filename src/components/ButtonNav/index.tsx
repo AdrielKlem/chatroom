@@ -1,21 +1,36 @@
 import { MouseEventHandler, ReactElement } from "react"
+import styled from "styled-components"
 
 import { Container } from "./styles"
 
 interface Props {
     text: string,
     icon: ReactElement,
+    isActive?: boolean,
     onClick?: MouseEventHandler,
 }
 
-export function ButtonNav({ text, icon, onClick, ...rest }: Props) {
+const ActiveContainer = styled(Container)`
+    border-left:  ${({ theme }) => theme.colors.primaryColor};
+`
+
+export function ButtonNav({ text, icon, isActive = false, onClick, ...rest }: Props) {
     return(
         <Container
             onClick={onClick}
             {...rest}
         >
-            {icon} 
-            {text ?? "Insira texto aqui"}
+            {isActive ? (
+                <ActiveContainer>
+                    {icon}
+                    {text ?? "Insira texto aqui"}
+                </ActiveContainer>
+            ) : (
+                <Container>
+                    {icon}
+                    {text ?? "Insira texto aqui"}
+                </Container>
+            )}
         </Container>
     )
 }
