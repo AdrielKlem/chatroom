@@ -33,7 +33,13 @@ export const Menu = styled.aside`
     grid-area: A;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
+    #Logout {
+        &:hover {
+            background-color: ${({ theme }) => theme.colors.whiteColor};
+        }
+    }
 `
 
 export const Inbox = styled.section`
