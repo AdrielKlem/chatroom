@@ -14,23 +14,33 @@ export function Home() {
         <Container>
             <Display>
                 <Menu>
-                    <ButtonNav
-                        text="Chat"
-                        icon={IconChat}
-                        isActive
-                    />
-                    <ButtonNav
-                        text="Contatos"
-                        icon={IconContacts}
-                    />
-                    <ButtonNav
-                        text="Configuração"
-                        icon={IconSettings}
-                    />
-                    <ButtonNav
-                        text="Desconectar"
-                        icon={IconLogout}
-                    />
+                    <ul className="menuList">
+                        <li id='navChat' className='menuItem'>
+                            <ButtonNav
+                                text="Chat"
+                                icon={IconChat}
+                                isActive
+                            />
+                        </li>
+                        <li id='navContacts' className='menuItem'>
+                            <ButtonNav
+                                text="Contatos"
+                                icon={IconContacts}
+                            />
+                        </li>
+                        <li id='navSettings' className='menuItem'>
+                            <ButtonNav
+                                text="Configuração"
+                                icon={IconSettings}
+                            />
+                        </li>
+                    </ul>
+                        <li id='Logout' className='menuItem'>
+                            <ButtonNav
+                                text="Desconectar"
+                                icon={IconLogout}
+                            />
+                        </li>
                 </Menu>
                 <Inbox />
                 <Chatting></Chatting>

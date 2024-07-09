@@ -31,6 +31,9 @@ export const Display = styled.div`
 
 export const Menu = styled.aside`
     grid-area: A;
+    display: flex;
+    flex-direction: column;
+
 `
 
 export const Inbox = styled.section`
