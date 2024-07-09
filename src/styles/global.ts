@@ -34,4 +34,10 @@ export default createGlobalStyle`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.primaryColor};
   }
+
+  ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 `
