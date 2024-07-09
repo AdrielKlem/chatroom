@@ -1,6 +1,6 @@
 import { MouseEventHandler, ReactElement } from "react"
 
-import { Container } from "./styles"
+import { Container, Content, IconElement } from "./styles"
 
 interface Props {
     text: string,
@@ -16,8 +16,12 @@ export function ButtonNav({ text, icon, isActive = false, onClick, ...rest }: Pr
             {...rest}
             isActive={isActive}
         >
-            {icon} 
-            {text ?? "Insira texto aqui"}
+            <Content>
+                <IconElement>
+                    {icon} 
+                </IconElement>
+                {text ?? "Insira texto aqui"}
+            </Content>
         </Container>
     )
 }
