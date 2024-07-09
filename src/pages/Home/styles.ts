@@ -34,10 +34,16 @@ export const Menu = styled.aside`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+`
 
-    #Logout {
+export const Logout = styled.div`
+
+
+    > button {
+        border-radius: 0 1rem 1rem 1rem;
+
         &:hover {
-            background-color: ${({ theme }) => theme.colors.whiteColor};
+            background-color: ${({ theme }) => theme.colors.secondaryColor};
         }
     }
 `
