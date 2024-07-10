@@ -9,6 +9,9 @@ export const Container = styled.div`
     height: 100vh;
 
     padding: 6rem;
+
+    font-size: 1.8rem;
+    color: ${({ theme }) => theme.colors.thirdColor};
 `
 
 export const Display = styled.div`
@@ -34,6 +37,20 @@ export const Menu = styled.aside`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+`
+
+export const UserAvatar = styled.div`
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+    margin: 1.6rem 0 0 1.6rem;
+
+    .profile-picture {
+        width: 3rem;
+        height: 3rem; 
+        border-radius: 50%;
+    }
 `
 
 export const Logout = styled.div`

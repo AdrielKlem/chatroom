@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComments, faUserGroup, faGear, faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons'
 
-import { Container, Display, Menu, Inbox, Chatting, Logout } from "./styles"
+import { Container, Display, Menu, UserAvatar, Inbox, Chatting, Logout } from "./styles"
 import { ButtonNav } from "../../components/ButtonNav"
 
 const IconChat = <FontAwesomeIcon icon={faComments} />
@@ -14,6 +14,13 @@ export function Home() {
         <Container>
             <Display>
                 <Menu>
+                    <UserAvatar>
+                        <img
+                            src="./src/assets/UserAvatarDefault.png"
+                            alt="user image" 
+                            className="profile-picture" />
+                        Olá, Usuário
+                    </UserAvatar>
                     <ul className="menuList">
                         <li id='navChat' className='menuItem'>
                             <ButtonNav
