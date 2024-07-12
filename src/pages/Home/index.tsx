@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faComments, faUserGroup, faGear, faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons'
+import { faComments, faUserGroup, faGear, faArrowRightFromBracket, faAnglesLeft } from '@fortawesome/free-solid-svg-icons'
 
 import { Container, Display, Menu, UserAvatar, Inbox, Chatting, Logout } from "./styles"
 import { ButtonNav } from "../../components/ButtonNav"
@@ -8,6 +8,10 @@ const IconChat = <FontAwesomeIcon icon={faComments} />
 const IconContacts = <FontAwesomeIcon icon={faUserGroup} /> 
 const IconSettings = <FontAwesomeIcon icon={faGear} />
 const IconLogout = <FontAwesomeIcon icon={faArrowRightFromBracket} />
+
+function IconArrow() {
+  return <FontAwesomeIcon icon={faAnglesLeft} />;
+}
 
 export function Home() {
     return (
@@ -48,6 +52,9 @@ export function Home() {
                             icon={IconLogout}
                         />
                     </Logout>
+                    <div>
+                        <IconArrow />
+                    </div>
                 </Menu>
                 <Inbox />
                 <Chatting></Chatting>
