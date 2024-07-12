@@ -39,6 +39,18 @@ export const Menu = styled.aside`
     justify-content: space-between;
 `
 
+export const CloseMenu = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: ${({ theme }) => theme.colors.secondaryBackground};
+
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+`
+
 export const UserAvatar = styled.div`
     display: flex;
     align-items: center;
@@ -54,8 +66,6 @@ export const UserAvatar = styled.div`
 `
 
 export const Logout = styled.div`
-
-
     > button {
         border-radius: 0 1rem 1rem 1rem;
 

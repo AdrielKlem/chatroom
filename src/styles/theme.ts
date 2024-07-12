@@ -1,6 +1,6 @@
 export const whiteColor = "#FFF";
 
-const blueDarkTheme = {   
+const blueDarkTheme = {
     name: "blueDarkTheme",
     colors: {
         primaryBackground: "#AABCD0",
@@ -13,7 +13,7 @@ const blueDarkTheme = {
         thirdColor: "#C5DBEF"
     }
 }
-        
+
 const orangeTheme = {
     name: "orangeTheme",
     colors: {

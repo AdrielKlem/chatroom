@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComments, faUserGroup, faGear, faArrowRightFromBracket, faAnglesLeft } from '@fortawesome/free-solid-svg-icons'
 
-import { Container, Display, Menu, UserAvatar, Inbox, Chatting, Logout } from "./styles"
+import { Container, Display, Menu, UserAvatar, CloseMenu, Inbox, Chatting, Logout } from "./styles"
 import { ButtonNav } from "../../components/ButtonNav"
 
 const IconChat = <FontAwesomeIcon icon={faComments} />
@@ -52,9 +52,9 @@ export function Home() {
                             icon={IconLogout}
                         />
                     </Logout>
-                    <div>
+                    <CloseMenu>
                         <IconArrow />
-                    </div>
+                    </CloseMenu>
                 </Menu>
                 <Inbox />
                 <Chatting></Chatting>
