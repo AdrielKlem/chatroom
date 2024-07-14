@@ -62,7 +62,11 @@ export const CloseMenu = styled.div`
     bottom: 5rem;
 
     &:hover {
-        
+        transform: scale(1.1);
+    }
+
+    &:active {
+        transform: scale(.9);
     }
 `
 
