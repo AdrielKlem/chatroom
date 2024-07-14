@@ -37,6 +37,14 @@ export const Menu = styled.aside`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    position: relative;
+`
+
+export const HeaderMenu = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
 `
 
 export const CloseMenu = styled.div`
@@ -46,9 +54,16 @@ export const CloseMenu = styled.div`
 
     background-color: ${({ theme }) => theme.colors.secondaryBackground};
 
-    width: 4.5rem;
-    height: 4.5rem;
-    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1.2rem;
+    position: absolute;
+    right: -1.5rem;
+    bottom: 5rem;
+
+    &:hover {
+        
+    }
 `
 
 export const UserAvatar = styled.div`
