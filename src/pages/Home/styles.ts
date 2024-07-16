@@ -44,7 +44,7 @@ export const Menu = styled.aside`
 export const HeaderMenu = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 3.2rem;
+    gap: 2.4rem;
 `
 
 export const CloseMenu = styled.div`
@@ -75,7 +75,8 @@ export const UserAvatar = styled.div`
     align-items: center;
     gap: .8rem;
 
-    margin: 1.6rem 0 0 1.6rem;
+    padding: 1.6rem 0 1.6rem 1.6rem;
+    border-bottom: 0.2rem solid ${({ theme }) => theme.colors.primaryColor};
 
     .profile-picture {
         width: 3rem;
