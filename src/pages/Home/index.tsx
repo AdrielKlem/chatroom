@@ -24,7 +24,7 @@ export function Home() {
                                 src="./src/assets/UserAvatarDefault.png"
                                 alt="user image" 
                                 className="profile-picture" />
-                            Olá, Usuário
+                            Olá, Usuário!
                         </UserAvatar>
                         <ul className="menuList">
                             <li id='navChat' className='menuItem'>

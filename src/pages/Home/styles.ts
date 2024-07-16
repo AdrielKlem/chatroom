@@ -22,8 +22,7 @@ export const Display = styled.div`
     border-radius: 2rem;
 
     display: grid;
-    grid-template: 
-    "A I I C C C C";
+    grid-template-columns: 1fr 2fr 4fr;
     gap: 1.6rem;
 
     > * {
@@ -33,7 +32,6 @@ export const Display = styled.div`
 `
 
 export const Menu = styled.aside`
-    grid-area: A;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -73,9 +71,9 @@ export const CloseMenu = styled.div`
 export const UserAvatar = styled.div`
     display: flex;
     align-items: center;
-    gap: .8rem;
+    justify-content: space-evenly;
 
-    padding: 1.6rem 0 1.6rem 1.6rem;
+    padding: 1.6rem 0 1.6rem 0;
     border-bottom: 0.2rem solid ${({ theme }) => theme.colors.primaryColor};
 
     .profile-picture {
@@ -98,9 +96,7 @@ export const Logout = styled.div`
 `
 
 export const Inbox = styled.section`
-    grid-area: I;
 `
 
 export const Chatting = styled.section`
-    grid-column: C;
 `
