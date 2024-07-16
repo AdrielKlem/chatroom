@@ -58,7 +58,31 @@ export function Home() {
                         <IconArrow />
                     </CloseMenu>
                 </Menu>
-                <Inbox />
+                <Inbox>
+                    <div>Pesquisa</div>
+                    <div>
+                        <ul>
+                            <li>Conversas</li>
+                            <li>Grupos</li>
+                        </ul>
+                    </div>
+                    <div className='Inbox'>
+                        <ul>
+                            <li>
+                                <div className='chat'>
+                                    <img
+                                        src="./src/assets/UserAvatarDefault.png"
+                                        alt="Foto usuário" />
+                                    <p>Nome</p>
+                                    <div>
+                                        18:49
+                                    </div>
+                                    <p>Qualquer texto nada a ver aqui ficticio...</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </Inbox>
                 <Chatting></Chatting>
             </Display>
         </Container>
