@@ -12,10 +12,22 @@ interface dataProps {
 export function ChatItem({data}: dataProps) {
     return (
         <Container>
-            {data.username}
-            {data.lastTime}
-            {data.pictureUser}
-            {data.lastMessage}
+            <div className='Inbox'>
+                <ul>
+                    <li>
+                        <div className='chat'>
+                            <img
+                                src={data.pictureUser}
+                                alt="Foto usuário" />
+                            <p>{data.username}</p>
+                            <div>
+                                {data.lastTime}
+                            </div>
+                            <p>{data.lastMessage}</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </Container>
     )
 }

@@ -15,6 +15,20 @@ function IconArrow() {
 }
 
 export function Home() {
+     const chatData = [
+    {
+      username: 'John Doe',
+      lastTime: '10:00',
+      pictureUser: './src/assets/UserAvatarDefault.png',
+      lastMessage: 'Olá! Tudo bem?',
+    },
+    {
+      username: 'Jane Doe',
+      lastTime: '11:30',
+      pictureUser: './src/assets/UserAvatarDefault.png',
+      lastMessage: 'Sim, estou bem, e você?',
+    },
+  ];
     return (
         <Container>
             <Display>
@@ -60,7 +74,6 @@ export function Home() {
                     </CloseMenu>
                 </Menu>
                 <Inbox>
-                    <ChatItem />
                     <div>Pesquisa</div>
                     <div>
                         <ul>
@@ -68,22 +81,9 @@ export function Home() {
                             <li>Grupos</li>
                         </ul>
                     </div>
-                    <div className='Inbox'>
-                        <ul>
-                            <li>
-                                <div className='chat'>
-                                    <img
-                                        src="./src/assets/UserAvatarDefault.png"
-                                        alt="Foto usuário" />
-                                    <p>Nome</p>
-                                    <div>
-                                        18:49
-                                    </div>
-                                    <p>Qualquer texto nada a ver aqui ficticio...</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    <ChatItem
+                    data={chatData[0]}
+                    />
                 </Inbox>
                 <Chatting></Chatting>
             </Display>
