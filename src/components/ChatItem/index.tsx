@@ -1,4 +1,4 @@
-import { Container } from "./styles"
+import { Container, PictureUser, DetailsUser, NameUser } from "./styles"
 
 interface dataProps {
     data: {
@@ -12,22 +12,18 @@ interface dataProps {
 export function ChatItem({data}: dataProps) {
     return (
         <Container>
-            <div className='Inbox'>
-                <ul>
-                    <li>
-                        <div className='chat'>
-                            <img
-                                src={data.pictureUser}
-                                alt="Foto usuário" />
-                            <p>{data.username}</p>
-                            <div>
-                                {data.lastTime}
-                            </div>
-                            <p>{data.lastMessage}</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <PictureUser>
+                <img
+                    src={data.pictureUser}
+                    alt="Foto usuário" />
+            </PictureUser>
+            <DetailsUser>
+                <NameUser>{data.username}</NameUser>
+                <p>{data.lastMessage}</p>
+                <div>
+                    {data.lastTime}
+                </div>
+            </DetailsUser>
         </Container>
     )
 }
