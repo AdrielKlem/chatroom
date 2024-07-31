@@ -1,4 +1,11 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
+
 import { Container, PictureUser, DetailsUser, NameUser, LastMessage, DetailsTime } from "./styles"
+
+function IconView() {
+  return <FontAwesomeIcon icon={faCheck} style={{color: "#74C0FC",}} />;
+}
 
 interface dataProps {
     data: {
@@ -23,6 +30,7 @@ export function ChatItem({data}: dataProps) {
             </DetailsUser>
             <DetailsTime>
                 {data.lastTime}
+                <IconView />
             </DetailsTime>
         </Container>
     )
