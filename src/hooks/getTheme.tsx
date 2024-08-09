@@ -2,7 +2,6 @@ import { createContext, useCallback, useContext, useState } from "react";
 import { ThemeProvider } from "styled-components";
 
 import Theme from "../styles/theme"
-import { whiteColor } from "../styles/theme"
 
 interface ThemeContextData {
   toggleTheme: () => void,
@@ -15,7 +14,8 @@ interface ThemeData {
         primaryBackground: string,
         secondaryBackground: string,
         thirdBackground: string,
-        textColor: string,
+        textColorPrincipal: string,
+        textColorSeconday: string,
         actionColor: string,
         primaryColor: string,
         secondaryColor: string,
@@ -44,7 +44,7 @@ export function CustomThemeProvider({ children }: any) {
     
     return (
         <themeContext.Provider value={{ toggleTheme, theme }}>
-            <ThemeProvider theme={{ ...theme, colors: { ...theme.colors, whiteColor } }}>
+            <ThemeProvider theme={{ ...theme, colors: { ...theme.colors } }}>
                 {children}
             </ThemeProvider>
         </themeContext.Provider>
