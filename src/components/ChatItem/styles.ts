@@ -44,7 +44,8 @@ export const DetailsTime = styled.div`
 `
 
 export const NameUser = styled.div`
-
+    color: ${({ theme }) => theme.colors.textColorPrincipal};
+    font-weight: 700;
 `
 
 export const LastMessage = styled.p`
