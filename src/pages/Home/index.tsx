@@ -4,6 +4,7 @@ import { faComments, faUserGroup, faGear, faArrowRightFromBracket, faAnglesLeft 
 import { Container, Display, Menu, HeaderMenu, UserAvatar, CloseMenu, Inbox, Chatting, Logout } from "./styles"
 import { ButtonNav } from "../../components/ButtonNav"
 import { ChatItem } from "../../components/ChatItem"
+import { BarSearch } from "../../components/BarSearch"
 
 const IconChat = <FontAwesomeIcon icon={faComments} />
 const IconContacts = <FontAwesomeIcon icon={faUserGroup} /> 
@@ -74,11 +75,13 @@ export function Home() {
                     </CloseMenu>
                 </Menu>
                 <Inbox>
+                    <BarSearch></BarSearch>
                     <div>Pesquisa</div>
                     <div>
                         <ul>
                             <li>Conversas</li>
                             <li>Grupos</li>
+                            <li>Arquivados</li>
                         </ul>
                     </div>
                     <ChatItem
