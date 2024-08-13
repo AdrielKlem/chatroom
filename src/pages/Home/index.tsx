@@ -75,8 +75,7 @@ export function Home() {
                     </CloseMenu>
                 </Menu>
                 <Inbox>
-                    <BarSearch></BarSearch>
-                    <div>Pesquisa</div>
+                    <BarSearch />
                     <div>
                         <ul>
                             <li>Conversas</li>
