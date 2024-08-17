@@ -96,6 +96,10 @@ export const Logout = styled.div`
 `
 
 export const Inbox = styled.section`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .8rem;
 `
 
 export const Chatting = styled.section`
