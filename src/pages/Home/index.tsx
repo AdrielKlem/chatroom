@@ -86,6 +86,9 @@ export function Home() {
                     <ChatItem
                     data={chatData[0]}
                     />
+                    <ChatItem
+                    data={chatData[1]}
+                    />
                 </Inbox>
                 <Chatting></Chatting>
             </Display>
