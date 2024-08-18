@@ -107,6 +107,7 @@ export const FilterChat = styled.div`
 
     width: 100%;
     padding: 1.2rem;
+    margin-bottom: .8rem;
 `
 
 export const FilterChatList = styled.ul`
@@ -115,15 +116,18 @@ export const FilterChatList = styled.ul`
     justify-content: space-around;
 
     > li {
+        background-color: ${({ theme }) => theme.colors.secondaryBackground};
         border-radius: 1.6rem;
         padding: .8rem;
+
+        color: ${({ theme }) => theme.colors.textColorPrincipal};
 
         cursor: pointer;
     }
     
     > li.active {
-       color: ${({ theme }) => theme.colors.textColorPrincipal};
-       background-color: ${({ theme }) => theme.colors.secondaryBackground};
+        background-color: ${({ theme }) => theme.colors.actionColor};
+        color: ${({ theme }) => theme.colors.thirdColor};
     }
 `
 
