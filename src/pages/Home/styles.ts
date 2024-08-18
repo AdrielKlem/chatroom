@@ -131,5 +131,9 @@ export const FilterChatList = styled.ul`
     }
 `
 
+export const ChatList = styled.div`
+
+`
+
 export const Chatting = styled.section`
 `
