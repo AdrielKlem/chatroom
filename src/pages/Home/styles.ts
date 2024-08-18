@@ -102,5 +102,30 @@ export const Inbox = styled.section`
     padding-top: .8rem;
 `
 
+export const FilterChat = styled.div`
+    border-bottom: 2px solid  ${({ theme }) => theme.colors.primaryColor};
+
+    width: 100%;
+    padding: 1.2rem;
+`
+
+export const FilterChatList = styled.ul`
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    > li {
+        border-radius: 1.6rem;
+        padding: .8rem;
+
+        cursor: pointer;
+    }
+    
+    > li.active {
+       color: ${({ theme }) => theme.colors.textColorPrincipal};
+       background-color: ${({ theme }) => theme.colors.secondaryBackground};
+    }
+`
+
 export const Chatting = styled.section`
 `

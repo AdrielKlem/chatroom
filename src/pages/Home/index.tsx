@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComments, faUserGroup, faGear, faArrowRightFromBracket, faAnglesLeft } from '@fortawesome/free-solid-svg-icons'
 
-import { Container, Display, Menu, HeaderMenu, UserAvatar, CloseMenu, Inbox, Chatting, Logout } from "./styles"
+import { Container, Display, Menu, HeaderMenu, UserAvatar, CloseMenu, Inbox, FilterChat, FilterChatList, Chatting, Logout } from "./styles"
 import { ButtonNav } from "../../components/ButtonNav"
 import { ChatItem } from "../../components/ChatItem"
 import { BarSearch } from "../../components/BarSearch"
@@ -76,13 +76,21 @@ export function Home() {
                 </Menu>
                 <Inbox>
                     <BarSearch />
-                    <div>
-                        <ul>
-                            <li>Conversas</li>
-                            <li>Grupos</li>
-                            <li>Arquivados</li>
-                        </ul>
-                    </div>
+                    <FilterChat>
+                        <FilterChatList>
+                            <li
+                                className='active'
+                            >
+                                Conversas
+                            </li>
+                            <li>
+                                Grupos
+                            </li>
+                            <li>
+                                Arquivados
+                            </li>
+                        </FilterChatList>
+                    </FilterChat>
                     <ChatItem
                     data={chatData[0]}
                     />
