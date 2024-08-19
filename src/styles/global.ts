@@ -40,4 +40,18 @@ export default createGlobalStyle`
     padding: 0;
     margin: 0;
   }
+
+  ::-webkit-scrollbar {
+    width: .6rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.colors.thirdColor};
+    border-radius: 10px;
+  }
+
 `
