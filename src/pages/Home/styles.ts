@@ -5,25 +5,17 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
 
-    width: 100%;
-    height: 100vh;
-
-    padding: 6rem;
-
     font-size: 1.8rem;
     color: ${({ theme }) => theme.colors.thirdColor};
 `
 
 export const Display = styled.div`
-    background-color: ${({ theme }) => theme.colors.primaryBackground};
     width: 100%;
-    height: 90vh;
-    padding: 3.2rem;
     border-radius: 2rem;
 
     display: grid;
     grid-template-columns: 1fr 2fr 4fr;
-    gap: 1.6rem;
+    gap: .8rem;
 
     > * {
         background-color: ${({ theme }) => theme.colors.thirdBackground};
@@ -100,6 +92,7 @@ export const Inbox = styled.section`
     flex-direction: column;
     align-items: center;
     padding-top: .8rem;
+    height: 100vh;
 `
 
 export const FilterChat = styled.div`
@@ -132,7 +125,9 @@ export const FilterChatList = styled.ul`
 `
 
 export const ChatList = styled.div`
-
+    overflow-y: scroll;
+    width: 95%;
+    height: 100%;
 `
 
 export const Chatting = styled.section`

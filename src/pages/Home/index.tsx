@@ -29,6 +29,12 @@ export function Home() {
       pictureUser: './src/assets/UserAvatarDefault.png',
       lastMessage: 'Sim, estou bem, e você?',
     },
+    {
+      username: 'Marry Doe',
+      lastTime: '11:30',
+      pictureUser: './src/assets/UserAvatarDefault.png',
+      lastMessage: 'Sim, estou bem, e você?',
+    },
   ];
     return (
         <Container>
@@ -114,7 +120,7 @@ export function Home() {
                         data={chatData[0]}
                         />
                         <ChatItem
-                        data={chatData[1]}
+                        data={chatData[2]}
                         />
                     </ChatList>
                 </Inbox>
