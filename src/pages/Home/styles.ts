@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    background-color: ${({ theme }) => theme.colors.secondaryColor};
+
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -19,7 +21,6 @@ export const Display = styled.div`
 
     > * {
         background-color: ${({ theme }) => theme.colors.thirdBackground};
-        border-radius: 1rem;
     }
 `
 
@@ -29,6 +30,8 @@ export const Menu = styled.aside`
     justify-content: space-between;
 
     position: relative;
+
+    border-radius: 0 .8rem .8rem 0;
 `
 
 export const HeaderMenu = styled.div`
@@ -131,4 +134,6 @@ export const ChatList = styled.div`
 `
 
 export const Chatting = styled.section`
+    border-radius: .8rem 0 0 .8rem;
+
 `
