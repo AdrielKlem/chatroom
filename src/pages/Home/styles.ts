@@ -70,7 +70,7 @@ export const UserAvatar = styled.div`
 
     padding: 1.6rem 0 1.6rem 0;
     border-bottom: 0.5rem solid ${({ theme }) => theme.colors.secondaryColor};
-    font-size: 2.4rem;
+    font-size: clamp(.6rem, 2vw + .6rem, 2.4rem);
 
     .profile-picture {
         width: 4rem;

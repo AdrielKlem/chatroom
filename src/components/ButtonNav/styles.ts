@@ -32,12 +32,14 @@ export const Content = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: clamp(.6rem, 1vw + .6rem, 2.4rem);
+
 `
 
 export const IconElement = styled.span`
     margin-right: .8rem;
 
     > svg {
-        font-size: 1.6rem;
+        font-size: 2.4rem;
     }
 `
