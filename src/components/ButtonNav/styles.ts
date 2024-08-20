@@ -11,7 +11,7 @@ export const Container = styled.button<ContainerProps>`
     padding: 1rem 1.5rem;
     border-radius: 0 1rem 1rem 0;
     background: none;
-    border-left: ${({ theme, isActive }) => isActive && `1rem solid ${theme.colors.secondaryColor}`}; 
+    border-left: ${({ theme, isActive }) => isActive && `1rem solid ${theme.colors.primaryColor}`}; 
 
     cursor: pointer;
     transition: background-color .5s;

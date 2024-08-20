@@ -17,7 +17,7 @@ export const Display = styled.div`
 
     display: grid;
     grid-template-columns: 1fr 2fr 4fr;
-    gap: .8rem;
+    gap: .5rem;
 
     > * {
         background-color: ${({ theme }) => theme.colors.thirdBackground};
@@ -69,11 +69,12 @@ export const UserAvatar = styled.div`
     justify-content: space-evenly;
 
     padding: 1.6rem 0 1.6rem 0;
-    border-bottom: 0.2rem solid ${({ theme }) => theme.colors.primaryColor};
+    border-bottom: 0.5rem solid ${({ theme }) => theme.colors.secondaryColor};
+    font-size: 2.4rem;
 
     .profile-picture {
-        width: 3rem;
-        height: 3rem; 
+        width: 4rem;
+        height: 4rem; 
         border-radius: 50%;
 
         cursor: pointer;
@@ -99,7 +100,7 @@ export const Inbox = styled.section`
 `
 
 export const FilterChat = styled.div`
-    border-bottom: 2px solid  ${({ theme }) => theme.colors.primaryColor};
+    border-bottom: .5rem solid  ${({ theme }) => theme.colors.secondaryColor};
 
     width: 100%;
     padding: 1.2rem;
