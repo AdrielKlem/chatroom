@@ -136,5 +136,30 @@ export const ChatList = styled.div`
 
 export const Chatting = styled.section`
     border-radius: .8rem 0 0 .8rem;
+`
+
+export const HeaderChat = styled.header`
+    background-color: ${({ theme }) => theme.colors.primaryBackground};
+    width: 100%;
+    height: 6.4rem;
+`
+
+export const UserStatus = styled.div`
+    > .pictureUser {
+        width: 5rem;
+        height: 5rem;
+        border: .1rem solid #000;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+`
+
+export const UserAction = styled.div`
 
 `
