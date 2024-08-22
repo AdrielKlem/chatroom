@@ -139,12 +139,20 @@ export const Chatting = styled.section`
 `
 
 export const HeaderChat = styled.header`
+    display: flex;
+    align-items: center;
+
     background-color: ${({ theme }) => theme.colors.primaryBackground};
     width: 100%;
     height: 6.4rem;
+    padding-left: .8rem;
 `
 
 export const UserStatus = styled.div`
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
     > .pictureUser {
         width: 5rem;
         height: 5rem;
@@ -157,6 +165,10 @@ export const UserStatus = styled.div`
             height: 100%;
             object-fit: cover;
         }
+    }
+
+    > .nameUser {
+        color: ${({ theme }) => theme.colors.textColorSeconday}
     }
 `
 

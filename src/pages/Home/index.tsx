@@ -132,6 +132,9 @@ export function Home() {
                                 src={chatData[0].pictureUser}
                                 alt="Foto usuário" />
                             </div>
+                            <div className='nameUser'>
+                                {chatData[0].username}
+                            </div>
                         </UserStatus>
                         <UserAction>
                             
