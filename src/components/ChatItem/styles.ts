@@ -11,18 +11,15 @@ export const Container = styled.div`
 `
 
 export const PictureUser = styled.div`
-    padding-bottom: 1.6rem;
-
-    > img {
-        width: 4.5rem;
-        height: 4.5rem;
-        
-        border-radius: 50%;
-    }
+    width: 4.5rem;
+    height: 4.5rem;
+    border: .1rem solid #000;
+    border-radius: 50%;
+    overflow: hidden;
 `
 
 export const DetailsBox = styled.div`
-    width: 100%;
+    width: 85%;
     padding-bottom: 1.6rem;
     border-bottom: 1px solid ${({ theme }) => theme.colors.secondaryColor};
 

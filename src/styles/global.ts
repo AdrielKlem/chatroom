@@ -41,6 +41,12 @@ export default createGlobalStyle`
     margin: 0;
   }
 
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   ::-webkit-scrollbar {
     width: .6rem;
   }

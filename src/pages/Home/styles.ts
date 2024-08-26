@@ -159,12 +159,6 @@ export const UserStatus = styled.div`
         border: .1rem solid #000;
         border-radius: 50%;
         overflow: hidden;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
     }
 
     > .nameUser {
