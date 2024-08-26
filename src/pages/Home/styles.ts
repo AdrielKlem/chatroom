@@ -141,11 +141,13 @@ export const Chatting = styled.section`
 export const HeaderChat = styled.header`
     display: flex;
     align-items: center;
-
+    flex-direction: row;
+    justify-content: space-between;
+    
     background-color: ${({ theme }) => theme.colors.primaryBackground};
     width: 100%;
     height: 6.4rem;
-    padding-left: .8rem;
+    padding: 0 .8rem;
 `
 
 export const UserStatus = styled.div`
@@ -167,5 +169,19 @@ export const UserStatus = styled.div`
 `
 
 export const UserAction = styled.div`
+    display: flex;
+    gap: .8rem;
 
+    .inputActionChat {
+        cursor: pointer;
+        font-size: 2.4rem;
+        color: ${({ theme }) => theme.colors.primaryColor}; 
+
+        &:hover {
+            > svg {
+                scale: 1.1;
+                filter: drop-shadow(10rem 10rem 8rem ${({ theme }) => theme.colors.actionColor});
+            }
+        }
+    }
 `

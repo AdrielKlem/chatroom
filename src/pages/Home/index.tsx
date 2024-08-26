@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faComments, faUserGroup, faGear, faArrowRightFromBracket, faAnglesLeft } from '@fortawesome/free-solid-svg-icons'
+import { faComments, faUserGroup, faGear, faArrowRightFromBracket, faAnglesLeft, faSquarePhone, faVideo, faBars } from '@fortawesome/free-solid-svg-icons'
 
 import { Container, Display, Menu, HeaderMenu, UserAvatar, CloseMenu, Inbox, FilterChat, FilterChatList, ChatList, Chatting, HeaderChat, UserStatus, UserAction, Logout } from "./styles"
 import { ButtonNav } from "../../components/ButtonNav"
@@ -13,6 +13,18 @@ const IconLogout = <FontAwesomeIcon icon={faArrowRightFromBracket} />
 
 function IconArrow() {
   return <FontAwesomeIcon icon={faAnglesLeft} />;
+}
+
+function IconCall() {
+    return <FontAwesomeIcon icon={faSquarePhone} />
+}
+
+function IconVideo() {
+    return <FontAwesomeIcon icon={faVideo} />
+}
+
+function IconConfigChat() {
+    return <FontAwesomeIcon icon={faBars} />
 }
 
 export function Home() {
@@ -137,7 +149,15 @@ export function Home() {
                             </div>
                         </UserStatus>
                         <UserAction>
-                            
+                            <div className="inputActionChat">
+                                <IconVideo />
+                            </div>
+                            <div className="inputActionChat">
+                                <IconCall />
+                            </div>
+                            <div className="inputActionChat">
+                                <IconConfigChat />
+                            </div>
                         </UserAction>
                     </HeaderChat>
                 </Chatting>
