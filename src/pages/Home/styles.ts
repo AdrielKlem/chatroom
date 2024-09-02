@@ -136,6 +136,11 @@ export const ChatList = styled.div`
 
 export const Chatting = styled.section`
     border-radius: .8rem 0 0 .8rem;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
 `
 
 export const HeaderChat = styled.header`
@@ -143,7 +148,7 @@ export const HeaderChat = styled.header`
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    
+
     background-color: ${({ theme }) => theme.colors.primaryBackground};
     width: 100%;
     height: 6.4rem;
@@ -184,4 +189,16 @@ export const UserAction = styled.div`
             }
         }
     }
+`
+
+export const MainChat = styled.main`
+    background-color: ${({ theme }) => theme.colors.actionColor};
+
+    height: 100%;
+`
+
+export const FooterChat = styled.footer`
+    background-color: ${({ theme }) => theme.colors.primaryBackground};
+
+    height: 8rem;
 `
