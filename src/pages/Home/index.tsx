@@ -5,6 +5,7 @@ import { Container, Display, Menu, HeaderMenu, UserAvatar, CloseMenu, Inbox, Fil
 import { ButtonNav } from "../../components/ButtonNav"
 import { ChatItem } from "../../components/ChatItem"
 import { BarSearch } from "../../components/BarSearch"
+import { MessageItem } from "../../components/MessageItem"
 
 const IconChat = <FontAwesomeIcon icon={faComments} />
 const IconContacts = <FontAwesomeIcon icon={faUserGroup} /> 
@@ -161,7 +162,9 @@ export function Home() {
                         </UserAction>
                     </HeaderChat>
                     <MainChat>
-                        
+                        <MessageItem 
+                            text="Opa"
+                        />
                     </MainChat>
                     <FooterChat>
 
