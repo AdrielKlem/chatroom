@@ -8,3 +8,11 @@ export const Container = styled.div`
     padding: 1.6rem;
     border-radius: .8rem;
 `
+
+export const HeaderBox = styled.div`
+
+`
+
+export const MainBox = styled.div`
+
+`

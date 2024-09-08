@@ -163,7 +163,9 @@ export function Home() {
                     </HeaderChat>
                     <MainChat>
                         <MessageItem 
-                            text="Opa"
+                            username="John"
+                            message="Opa"
+                            time="12:30"
                         />
                     </MainChat>
                     <FooterChat>

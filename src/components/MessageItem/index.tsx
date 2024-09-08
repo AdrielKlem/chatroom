@@ -1,13 +1,21 @@
-import { Container } from "./styles"
+import { Container, HeaderBox, MainBox } from "./styles"
 
 interface Props {
-    text: string;
+    username: string
+    message: string;
+    time: string;
 }
 
-export function MessageItem({ text }: Props) {
+export function MessageItem({ username, message, time }: Props) {
     return (
         <Container>
-            {text}
+            <HeaderBox>
+                {username}
+                {time}
+            </HeaderBox>
+            <MainBox>
+                {message}
+            </MainBox>
         </Container>
     )
 }
