@@ -192,9 +192,8 @@ export const UserAction = styled.div`
 `
 
 export const MainChat = styled.main`
-    background-color: ${({ theme }) => theme.colors.actionColor};
-
     height: 100%;
+    padding: 1.2rem;
 `
 
 export const FooterChat = styled.footer`
