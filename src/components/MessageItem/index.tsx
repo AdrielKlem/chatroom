@@ -10,8 +10,8 @@ export function MessageItem({ username, message, time }: Props) {
     return (
         <Container>
             <HeaderBox>
-                {username}
-                {time}
+                <h4>{username}</h4>
+                <span>{time}</span>
             </HeaderBox>
             <MainBox>
                 {message}
