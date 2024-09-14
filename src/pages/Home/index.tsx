@@ -167,6 +167,12 @@ export function Home() {
                             message="Opa"
                             time="12:30"
                         />
+                         <MessageItem 
+                            isSender={true}
+                            username="John"
+                            message="Opa"
+                            time="12:30"
+                        />
                     </MainChat>
                     <FooterChat>
 

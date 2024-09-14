@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: ${({ theme }) => theme.colors.secondaryBackground};
+    background-color: ${({ theme, isSender }) => isSender ? theme.colors.secondaryBackground : theme.colors.secondaryBackground};
 
     height: auto;
     max-width: 30%;

@@ -4,11 +4,12 @@ interface Props {
     username: string
     message: string;
     time: string;
+    isSender?: boolean;
 }
 
-export function MessageItem({ username, message, time }: Props) {
+export function MessageItem({ username, message, time, isSender = false }: Props) {
     return (
-        <Container>
+        <Container isSender={isSender}>
             <HeaderBox>
                 <h4>{username}</h4>
                 <span>{time}</span>
