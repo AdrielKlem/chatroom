@@ -151,7 +151,7 @@ export const HeaderChat = styled.header`
 
     background-color: ${({ theme }) => theme.colors.primaryBackground};
     width: 100%;
-    height: 6.4rem;
+    height: 7.2rem;
     padding: 0 .8rem;
 `
 
