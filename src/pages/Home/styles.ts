@@ -206,3 +206,11 @@ export const FooterChat = styled.footer`
 
     height: 8rem;
 `
+
+export const InputText = styled.input`
+
+`
+
+export const SubmitChat = styled.input`
+
+`

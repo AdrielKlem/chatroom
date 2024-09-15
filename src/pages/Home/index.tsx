@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComments, faUserGroup, faGear, faArrowRightFromBracket, faAnglesLeft, faSquarePhone, faVideo, faBars } from '@fortawesome/free-solid-svg-icons'
 
-import { Container, Display, Menu, HeaderMenu, UserAvatar, CloseMenu, Inbox, FilterChat, FilterChatList, ChatList, Chatting, HeaderChat, UserStatus, UserAction, MainChat, FooterChat, Logout } from "./styles"
+import { Container, Display, Menu, HeaderMenu, UserAvatar, CloseMenu, Inbox, FilterChat, FilterChatList, ChatList, Chatting, HeaderChat, UserStatus, UserAction, MainChat, FooterChat, InputText, SubmitChat, Logout } from "./styles"
 import { ButtonNav } from "../../components/ButtonNav"
 import { ChatItem } from "../../components/ChatItem"
 import { BarSearch } from "../../components/BarSearch"
@@ -175,7 +175,14 @@ export function Home() {
                         />
                     </MainChat>
                     <FooterChat>
-
+                        <form action="">
+                            <InputText 
+                                type="text"
+                                />
+                            <SubmitChat 
+                                type="submit"
+                                />
+                        </form>
                     </FooterChat>
                 </Chatting>
             </Display>
