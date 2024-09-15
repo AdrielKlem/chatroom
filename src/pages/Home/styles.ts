@@ -194,6 +194,11 @@ export const UserAction = styled.div`
 export const MainChat = styled.main`
     height: 100%;
     padding: 1.2rem;
+
+    > .Sender {
+        margin-left: auto; 
+        margin-right: 0;
+    }
 `
 
 export const FooterChat = styled.footer`

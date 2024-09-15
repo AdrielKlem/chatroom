@@ -9,12 +9,18 @@ interface Props {
 
 export function MessageItem({ username, message, time, isSender = false }: Props) {
     return (
-        <Container isSender={isSender}>
-            <HeaderBox>
+        <Container 
+            isSender={isSender}
+            className={isSender ? "Sender" : "Receiver"}> 
+            <HeaderBox
+                isSender={isSender}
+            >
                 <h4>{username}</h4>
                 <span>{time}</span>
             </HeaderBox>
-            <MainBox>
+            <MainBox
+                isSender={isSender}
+            >
                 {message}
             </MainBox>
         </Container>
