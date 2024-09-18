@@ -25,7 +25,6 @@ export const InputBar = styled.input`
     font-weight: 700;
 
     &::placeholder {
-        color: ${({ theme }) => theme.colors.textColorPrincipal};
         font-weight: 600;
     }
 `

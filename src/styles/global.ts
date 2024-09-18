@@ -60,4 +60,19 @@ export default createGlobalStyle`
     border-radius: 10px;
   }
 
+  ::-webkit-input-placeholder {
+      color: ${({ theme }) => theme.colors.textColorPrincipal};
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+      color: ${({ theme }) => theme.colors.textColorPrincipal};
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+      color: ${({ theme }) => theme.colors.textColorPrincipal};
+  }
+
+  :-ms-input-placeholder {  
+      color: ${({ theme }) => theme.colors.textColorPrincipal};
+  }
 `
