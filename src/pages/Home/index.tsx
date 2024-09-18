@@ -178,6 +178,7 @@ export function Home() {
                         <form action="">
                             <InputText 
                                 type="text"
+                                placeholder='Digite uma mensagem'
                                 />
                             <SubmitChat 
                                 type="submit"

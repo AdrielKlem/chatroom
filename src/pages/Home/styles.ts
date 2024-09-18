@@ -203,12 +203,28 @@ export const MainChat = styled.main`
 
 export const FooterChat = styled.footer`
     background-color: ${({ theme }) => theme.colors.primaryBackground};
-
+    display: flex;
     height: 8rem;
+    
+    > form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .8rem;
+
+        width: 100%;
+
+        > * {
+            height: 4rem;
+        }
+    }
 `
 
 export const InputText = styled.input`
-
+    border: 0;
+    border-radius: 1.2rem;
+    width: 70%;
+    padding-left: .8rem;
 `
 
 export const SubmitChat = styled.input`
