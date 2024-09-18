@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faComments, faUserGroup, faGear, faArrowRightFromBracket, faAnglesLeft, faSquarePhone, faVideo, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faComments, faUserGroup, faGear, faArrowRightFromBracket, faAnglesLeft, faSquarePhone, faVideo, faBars, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 import { Container, Display, Menu, HeaderMenu, UserAvatar, CloseMenu, Inbox, FilterChat, FilterChatList, ChatList, Chatting, HeaderChat, UserStatus, UserAction, MainChat, FooterChat, InputText, SubmitChat, Logout } from "./styles"
 import { ButtonNav } from "../../components/ButtonNav"
@@ -26,6 +26,10 @@ function IconVideo() {
 
 function IconConfigChat() {
     return <FontAwesomeIcon icon={faBars} />
+}
+
+function IconSendMessagem() {
+    return <FontAwesomeIcon icon={faPaperPlane} />
 }
 
 export function Home() {
@@ -180,9 +184,9 @@ export function Home() {
                                 type="text"
                                 placeholder='Digite uma mensagem'
                                 />
-                            <SubmitChat 
-                                type="submit"
-                                />
+                            <SubmitChat>
+                                <IconSendMessagem />
+                            </SubmitChat>
                         </form>
                     </FooterChat>
                 </Chatting>

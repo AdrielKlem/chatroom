@@ -210,7 +210,7 @@ export const FooterChat = styled.footer`
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: .8rem;
+        gap: 2.4rem;
 
         width: 100%;
 
@@ -221,12 +221,21 @@ export const FooterChat = styled.footer`
 `
 
 export const InputText = styled.input`
+    background-color: ${({ theme }) => theme.colors.thirdBackground};
     border: 0;
     border-radius: 1.2rem;
-    width: 70%;
-    padding-left: .8rem;
+    color: ${({ theme }) => theme.colors.textColorPrincipal};
+    width: 80%;
+    padding-left: 1.6rem;
 `
 
-export const SubmitChat = styled.input`
+export const SubmitChat = styled.button`
+    background: none;
+    border: 0;
 
+    > svg {
+        color: ${({ theme }) => theme.colors.actionColor};
+        font-size: 2.6rem;
+        transform: rotate(20deg);
+    }
 `
