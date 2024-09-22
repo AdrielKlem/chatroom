@@ -36,13 +36,13 @@ export const DetailsBox = styled.div`
 export const DetailsUser = styled.div`
     display: flex;
     flex-direction: column;
-    gap: .8rem;
+    gap: 1.6rem;
 `
 
 export const DetailsTime = styled.div`
     display: flex;
     flex-direction: column;
-    gap: .8rem;
+    gap: 1.6rem;
 `
 
 export const NameUser = styled.div`
