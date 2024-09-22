@@ -104,7 +104,6 @@ export const FilterChat = styled.div`
 
     width: 100%;
     padding: 1.2rem;
-    margin-bottom: .8rem;
 `
 
 export const FilterChatList = styled.ul`
