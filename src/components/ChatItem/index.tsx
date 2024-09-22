@@ -4,7 +4,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { Container, PictureUser, DetailsUser, NameUser, LastMessage, DetailsBox, DetailsTime } from "./styles"
 
 function IconView() {
-  return <FontAwesomeIcon icon={faCheck} style={{color: "#74C0FC",}} />;
+  return <FontAwesomeIcon icon={faCheck} style={{color: "#74C0FC"}} />;
 }
 
 interface dataProps {
@@ -13,12 +13,15 @@ interface dataProps {
         lastTime: string;
         pictureUser: string;
         lastMessage: string;
+        isOpen?: boolean;
     }
 }
 
 export function ChatItem({data}: dataProps) {
     return (
-        <Container>
+        <Container
+            className={data.isOpen ? "Open" : ""}
+        >
             <PictureUser>
                 <img
                     src={data.pictureUser}

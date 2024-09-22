@@ -35,22 +35,23 @@ function IconSendMessagem() {
 export function Home() {
      const chatData = [
     {
-      username: 'John Doe',
-      lastTime: '10:00',
-      pictureUser: './src/assets/UserAvatarDefault.png',
-      lastMessage: 'Olá! Tudo bem?',
+        username: 'John Doe',
+        lastTime: '10:00',
+        pictureUser: './src/assets/UserAvatarDefault.png',
+        lastMessage: 'Olá! Tudo bem?',
     },
     {
-      username: 'Jane Doe',
-      lastTime: '11:30',
-      pictureUser: './src/assets/UserAvatarDefault.png',
-      lastMessage: 'Sim, estou bem, e você?',
+        username: 'Jane Doe',
+        lastTime: '11:30',
+        pictureUser: './src/assets/UserAvatarDefault.png',
+        lastMessage: 'Sim, estou bem, e você?',
     },
     {
-      username: 'Marry Doe',
-      lastTime: '11:30',
-      pictureUser: './src/assets/UserAvatarDefault.png',
-      lastMessage: 'Sim, estou bem, e você?',
+        username: 'Marry Doe',
+        lastTime: '11:30',
+        pictureUser: './src/assets/UserAvatarDefault.png',
+        lastMessage: 'Sim, estou bem, e você?',
+        isOpen: true,
     },
   ];
     return (
@@ -116,28 +117,28 @@ export function Home() {
                     </FilterChat>
                     <ChatList>
                         <ChatItem
-                        data={chatData[0]}
-                        />
-                        <ChatItem
-                        data={chatData[1]}
-                        />
-                        <ChatItem
-                        data={chatData[0]}
-                        />
-                        <ChatItem
-                        data={chatData[1]}
-                        />
-                        <ChatItem
-                        data={chatData[0]}
-                        />
-                        <ChatItem
-                        data={chatData[1]}
-                        />
-                        <ChatItem
-                        data={chatData[0]}
-                        />
-                        <ChatItem
                         data={chatData[2]}
+                        />
+                        <ChatItem
+                        data={chatData[1]}
+                        />
+                        <ChatItem
+                        data={chatData[0]}
+                        />
+                        <ChatItem
+                        data={chatData[1]}
+                        />
+                        <ChatItem
+                        data={chatData[0]}
+                        />
+                        <ChatItem
+                        data={chatData[1]}
+                        />
+                        <ChatItem
+                        data={chatData[0]}
+                        />
+                        <ChatItem
+                        data={chatData[0]}
                         />
                     </ChatList>
                 </Inbox>

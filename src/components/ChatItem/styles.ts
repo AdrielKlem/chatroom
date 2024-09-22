@@ -8,6 +8,10 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     gap: 1.6rem;
+
+    &.Open {
+        background-color: ${({ theme }) => theme.colors.secondaryBackground};
+    }
 `
 
 export const PictureUser = styled.div`

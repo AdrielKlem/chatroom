@@ -130,7 +130,7 @@ export const FilterChatList = styled.ul`
 
 export const ChatList = styled.div`
     overflow-y: scroll;
-    width: 95%;
+    width: 100%;
     height: 100%;
 `
 
