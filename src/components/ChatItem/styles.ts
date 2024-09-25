@@ -3,12 +3,16 @@ import { styled } from "styled-components"
 
 export const Container = styled.div`
     width: 100%;
-    padding: 1rem .8rem 0;
-    margin-bottom: .8rem;
+    padding: 1.6rem .8rem 0;
 
     display: flex;
     align-items: center;
     gap: 1.6rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: ${({ theme }) => theme.colors.secondaryBackground}60; // Ultimos caracteres é a "opacity" da cor em hex
+    }
 
     &.Open {
         background-color: ${({ theme }) => theme.colors.secondaryBackground};
@@ -31,6 +35,7 @@ export const DetailsBox = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 `
 
 export const DetailsUser = styled.div`
