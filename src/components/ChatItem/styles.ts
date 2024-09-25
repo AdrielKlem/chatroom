@@ -1,5 +1,5 @@
 import { styled } from "styled-components"
-
+import { percentToHex } from "../../utils/percentToHex"
 
 export const Container = styled.div`
     width: 100%;
@@ -11,7 +11,7 @@ export const Container = styled.div`
     cursor: pointer;
 
     &:hover {
-        background-color: ${({ theme }) => theme.colors.secondaryBackground}60; // Ultimos caracteres é a "opacity" da cor em hex
+        background-color: ${({ theme }) => theme.colors.secondaryBackground + percentToHex({ percent: 0.7 })}; // Ultimos caracteres é a "opacity" da cor em hex
     }
 
     &.Open {
