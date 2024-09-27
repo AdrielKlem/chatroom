@@ -41,8 +41,22 @@ export const HeaderMenu = styled.div`
 `
 
 export const CloseMenu = styled.div`
+    position: absolute;
+    right: -1.5rem;
+    bottom: 5rem;
+`
+
+export const CloseMenuInput = styled.input`
+    /* display: none; */
+
+    &:checked {
+        transform: rotate(180deg);
+    }
+`
+
+export const CloseMenuLabel = styled.label`
     display: flex;
-    align-items: center;
+        align-items: center;
     justify-content: center;
 
     background-color: ${({ theme }) => theme.colors.secondaryBackground};
@@ -50,16 +64,14 @@ export const CloseMenu = styled.div`
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 1.2rem;
-    position: absolute;
-    right: -1.5rem;
-    bottom: 5rem;
-
+    
     &:hover {
         transform: scale(1.1);
     }
-
+    
     &:active {
-        transform: scale(.9);
+        transform: rotate(.9);
+        transform: rotate(180deg);   
     }
 `
 
