@@ -22,6 +22,14 @@ export const Display = styled.div`
     > * {
         background-color: ${({ theme }) => theme.colors.thirdBackground};
     }
+
+    &.Closed {
+        grid-template-columns: 8rem 2fr 4fr;
+
+        p > span {
+            display: none;
+        }
+    }
 `
 
 export const Menu = styled.aside`
@@ -38,9 +46,13 @@ export const HeaderMenu = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
+
+    .Closed + & {
+        background-color: ${({ theme }) => theme.colors.actionColor};
+    }
 `
 
-export const CloseMenu = styled.div`
+export const MenuButton = styled.div`
     position: absolute;
     right: -1.5rem;
     bottom: 5rem;
@@ -50,7 +62,7 @@ export const CloseMenu = styled.div`
     }
 `
 
-export const CloseMenuInput = styled.input`
+export const MenuInput = styled.input`
     display: none;
 
     &:checked + .icon {
@@ -58,7 +70,7 @@ export const CloseMenuInput = styled.input`
     }
 `
 
-export const CloseMenuLabel = styled.label`
+export const MenuLabel = styled.label`
     display: flex;
     align-items: center;
     justify-content: center;

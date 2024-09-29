@@ -20,7 +20,9 @@ export function ButtonNav({ text, icon, isActive = false, onClick, ...rest }: Pr
                 <IconElement>
                     {icon} 
                 </IconElement>
-                {text ?? "Insira texto aqui"}
+                <p>
+                    <span>{text ?? "Insira texto aqui"}</span>
+                </p>
             </Content>
         </Container>
     )

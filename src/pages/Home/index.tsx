@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComments, faUserGroup, faGear, faArrowRightFromBracket, faAnglesLeft, faSquarePhone, faVideo, faBars, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
-import { Container, Display, Menu, HeaderMenu, UserAvatar, CloseMenu, CloseMenuLabel, CloseMenuInput, Inbox, FilterChat, FilterChatList, ChatList, Chatting, HeaderChat, UserStatus, UserAction, MainChat, FooterChat, InputText, SubmitChat, Logout } from "./styles"
+import { Container, Display, Menu, HeaderMenu, UserAvatar, MenuButton, MenuInput, MenuLabel, Inbox, FilterChat, FilterChatList, ChatList, Chatting, HeaderChat, UserStatus, UserAction, MainChat, FooterChat, InputText, SubmitChat, Logout } from "./styles"
 import { ButtonNav } from "../../components/ButtonNav"
 import { ChatItem } from "../../components/ChatItem"
 import { BarSearch } from "../../components/BarSearch"
 import { MessageItem } from "../../components/MessageItem"
+import { useState } from 'react'
 
 const IconChat = <FontAwesomeIcon icon={faComments} />
 const IconContacts = <FontAwesomeIcon icon={faUserGroup} /> 
@@ -32,8 +33,7 @@ function IconSendMessagem() {
     return <FontAwesomeIcon icon={faPaperPlane} />
 }
 
-export function Home() {
-     const chatData = [
+const chatData = [
     {
         username: 'John Doe',
         lastTime: '10:00',
@@ -54,17 +54,26 @@ export function Home() {
         isOpen: true,
     },
   ];
+
+export function Home() {
+    const [isClose, setIsClose] = useState(false)
+
     return (
         <Container>
-            <Display>
-                <Menu>
+            <Display
+                className={isClose ? 'Closed' : ''}
+            >
+                <Menu
+                >
                     <HeaderMenu>
                         <UserAvatar>
                             <img
                                 src="./src/assets/UserAvatarDefault.png"
                                 alt="user image" 
                                 className="profile-picture" />
-                            Olá, Usuário!
+                            <p>
+                                <span>Olá, Usuário!</span>
+                            </p>
                         </UserAvatar>
                         <ul className="menuList">
                             <li id='navChat' className='menuItem'>
@@ -94,12 +103,12 @@ export function Home() {
                             icon={IconLogout}
                         />
                     </Logout>
-                    <CloseMenu>
-                        <CloseMenuInput type="checkbox" name='closeMenu' id='closeMenu'/>
-                        <CloseMenuLabel htmlFor="closeMenu" className='icon'>
+                    <MenuButton>
+                        <MenuInput onClick={() => setIsClose(!isClose)} type="checkbox" name='closeMenu' id='closeMenu'/>
+                        <MenuLabel htmlFor="closeMenu" className='icon'>
                             <IconArrow />
-                        </CloseMenuLabel>
-                    </CloseMenu>
+                        </MenuLabel>
+                    </MenuButton>
                 </Menu>
                 <Inbox>
                     <BarSearch />
