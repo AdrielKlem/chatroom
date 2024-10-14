@@ -33,28 +33,63 @@ function IconSendMessagem() {
     return <FontAwesomeIcon icon={faPaperPlane} />
 }
 
+
+
+
 const chatData = [
     {
-        username: 'John Doe',
+        id: 1,
+        name: 'John Doe',
         lastTime: '10:00',
-        pictureUser: './src/assets/UserAvatarDefault.png',
+        pictureUser: './src/assets/UserAvatarDefault.png', // Use "pictureUser" aqui
         lastMessage: 'Olá! Tudo bem?',
+        isOpen: true,
+        messages: [
+        // ... mensagens da conversa ...
+        ],
     },
     {
-        username: 'Jane Doe',
-        lastTime: '11:30',
-        pictureUser: './src/assets/UserAvatarDefault.png',
-        lastMessage: 'Sim, estou bem, e você?',
-    },
-    {
-        username: 'Marry Doe',
+        id: 2,
+        name: 'Jane Doe',
         lastTime: '11:30',
         pictureUser: './src/assets/UserAvatarDefault.png',
         lastMessage: 'Sim, estou bem, e você?',
         isOpen: true,
+        messages: [
+        // ... mensagens da conversa ...
+        ],
     },
-  ];
-
+    {
+        id: 3,
+        name: 'Marry Doe',
+        lastTime: '11:30',
+        pictureUser: './src/assets/UserAvatarDefault.png',
+        lastMessage: 'Sim, estou bem, e você?',
+        isOpen: true,
+        messages: [
+            // ... mensagens da conversa ...
+        ],
+    },
+    {
+        id: 4,
+        username: "Fabio Gramer",
+        pictureUser: "https://picsum.photos/50",
+        lastMessage: messages[0],
+        messages: [
+            {
+                sender: "Fabio Gramer",
+                content: "Olá! Como vai?",
+                timestamp: new Date("2023-08-15T14:30:00"),
+            },
+            {
+                sender: "Você",
+                content: "Oi, tudo bem e você?",
+                timestamp: new Date("2023-08-15T14:32:00"),
+            },
+        ]
+    },
+]
+  
 export function Home() {
     const [isClose, setIsClose] = useState(false)
 
