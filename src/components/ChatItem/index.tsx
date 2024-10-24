@@ -7,17 +7,31 @@ function IconView() {
   return <FontAwesomeIcon icon={faCheck} style={{color: "#74C0FC"}} />;
 }
 
+
+interface MessagesInterface {
+    isSending: boolean,
+    content: string,
+    timestamp?: string,
+}
+
 interface dataProps {
     data: {
-        username: string;
-        lastTime: string;
-        pictureUser: string;
-        lastMessage: string;
-        isOpen?: boolean;
+        id: number,
+        username: string,
+        lastTime: string,
+        pictureUser: string,
+        isOpen?: boolean,
+        messages: MessagesInterface[],
+        lastMessage?: string,
     }
 }
 
 export function ChatItem({data}: dataProps) {
+    data.lastMessage = data.messages[data.messages.length - 1].content ?? ""
+
+    console.log(data.lastMessage)
+
+
     return (
         <Container
             className={data.isOpen ? "Open" : ""}

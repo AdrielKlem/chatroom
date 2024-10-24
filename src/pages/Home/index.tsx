@@ -34,38 +34,33 @@ function IconSendMessagem() {
 }
 
 
-
-
 const chatData = [
     {
         id: 1,
-        name: 'John Doe',
+        username: 'John Doe',
         lastTime: '10:00',
         pictureUser: './src/assets/UserAvatarDefault.png', // Use "pictureUser" aqui
-        lastMessage: 'Olá! Tudo bem?',
         isOpen: true,
         messages: [
-        // ... mensagens da conversa ...
+            // ... mensagens da conversa ...
         ],
     },
     {
         id: 2,
-        name: 'Jane Doe',
+        username: 'Jane Doe',
         lastTime: '11:30',
         pictureUser: './src/assets/UserAvatarDefault.png',
-        lastMessage: 'Sim, estou bem, e você?',
-        isOpen: true,
+        isOpen: false,
         messages: [
-        // ... mensagens da conversa ...
+            // ... mensagens da conversa ...
         ],
     },
     {
         id: 3,
-        name: 'Marry Doe',
+        username: 'Marry Doe',
         lastTime: '11:30',
         pictureUser: './src/assets/UserAvatarDefault.png',
-        lastMessage: 'Sim, estou bem, e você?',
-        isOpen: true,
+        isOpen: false,
         messages: [
             // ... mensagens da conversa ...
         ],
@@ -73,20 +68,20 @@ const chatData = [
     {
         id: 4,
         username: "Fabio Gramer",
+        lastTime: "15:13",
         pictureUser: "https://picsum.photos/50",
-        lastMessage: messages[0],
+        isOpen: false,
         messages: [
             {
-                sender: "Fabio Gramer",
+                isSending: false,
                 content: "Olá! Como vai?",
-                timestamp: new Date("2023-08-15T14:30:00"),
+                timestamp: "30:11",
             },
             {
-                sender: "Você",
+                isSending: true,
                 content: "Oi, tudo bem e você?",
-                timestamp: new Date("2023-08-15T14:32:00"),
             },
-        ]
+        ],
     },
 ]
   
