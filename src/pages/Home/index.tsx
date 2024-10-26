@@ -158,9 +158,14 @@ export function Home() {
                         </FilterChatList>
                     </FilterChat>
                     <ChatList>
-                        <ChatItem
-                        data={chatData[1]}
-                        />            
+                        {
+                            chatData && chatData.map((chat) => (
+                                <ChatItem
+                                key={chat.id}
+                                data={chat}
+                                />
+                            ))
+                        }
                     </ChatList>
                 </Inbox>
                 <Chatting>
