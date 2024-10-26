@@ -27,10 +27,7 @@ interface dataProps {
 }
 
 export function ChatItem({data}: dataProps) {
-    data.lastMessage = data.messages[data.messages.length - 1].content ?? ""
-
-    console.log(data.lastMessage)
-
+    data.lastMessage = data.messages.length > 0 ? data.messages[data.messages.length - 1].content : "";
 
     return (
         <Container

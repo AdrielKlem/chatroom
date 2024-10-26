@@ -159,38 +159,17 @@ export function Home() {
                     </FilterChat>
                     <ChatList>
                         <ChatItem
-                        data={chatData[2]}
-                        />
-                        <ChatItem
                         data={chatData[1]}
-                        />
-                        <ChatItem
-                        data={chatData[0]}
-                        />
-                        <ChatItem
-                        data={chatData[1]}
-                        />
-                        <ChatItem
-                        data={chatData[0]}
-                        />
-                        <ChatItem
-                        data={chatData[1]}
-                        />
-                        <ChatItem
-                        data={chatData[0]}
-                        />
-                        <ChatItem
-                        data={chatData[0]}
-                        />
+                        />            
                     </ChatList>
                 </Inbox>
                 <Chatting>
                     <HeaderChat>
                         <UserStatus>
                             <div className='pictureUser'>
-                                  <img
-                                src={chatData[0].pictureUser}
-                                alt="Foto usuário" />
+                                <img
+                                    src={chatData[0].pictureUser}
+                                    alt="Foto usuário" />
                             </div>
                             <div className='nameUser'>
                                 {chatData[0].username}
