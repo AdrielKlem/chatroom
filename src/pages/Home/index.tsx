@@ -6,6 +6,7 @@ import { ButtonNav } from "../../components/ButtonNav"
 import { ChatItem } from "../../components/ChatItem"
 import { BarSearch } from "../../components/BarSearch"
 import { MessageItem } from "../../components/MessageItem"
+import { chatData } from '../../hooks/getChatData'
 import { useState } from 'react'
 
 const IconChat = <FontAwesomeIcon icon={faComments} />
@@ -33,57 +34,6 @@ function IconSendMessagem() {
     return <FontAwesomeIcon icon={faPaperPlane} />
 }
 
-
-const chatData = [
-    {
-        id: 1,
-        username: 'John Doe',
-        lastTime: '10:00',
-        pictureUser: './src/assets/UserAvatarDefault.png', // Use "pictureUser" aqui
-        isOpen: true,
-        messages: [
-            // ... mensagens da conversa ...
-        ],
-    },
-    {
-        id: 2,
-        username: 'Jane Doe',
-        lastTime: '11:30',
-        pictureUser: './src/assets/UserAvatarDefault.png',
-        isOpen: false,
-        messages: [
-            // ... mensagens da conversa ...
-        ],
-    },
-    {
-        id: 3,
-        username: 'Marry Doe',
-        lastTime: '11:30',
-        pictureUser: './src/assets/UserAvatarDefault.png',
-        isOpen: false,
-        messages: [
-            // ... mensagens da conversa ...
-        ],
-    },
-    {
-        id: 4,
-        username: "Fabio Gramer",
-        lastTime: "15:13",
-        pictureUser: "https://picsum.photos/50",
-        isOpen: false,
-        messages: [
-            {
-                isSending: false,
-                content: "Olá! Como vai?",
-                timestamp: "30:11",
-            },
-            {
-                isSending: true,
-                content: "Oi, tudo bem e você?",
-            },
-        ],
-    },
-]
   
 export function Home() {
     const [isClose, setIsClose] = useState(false)
