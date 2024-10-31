@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 import { Container, PictureUser, DetailsUser, NameUser, LastMessage, DetailsBox, DetailsTime } from "./styles"
-import { useState } from 'react';
 
 function IconView() {
   return <FontAwesomeIcon icon={faCheck} style={{color: "#74C0FC"}} />;
