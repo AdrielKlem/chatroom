@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 import { Container, PictureUser, DetailsUser, NameUser, LastMessage, DetailsBox, DetailsTime } from "./styles"
+import { useState } from 'react';
 
 function IconView() {
   return <FontAwesomeIcon icon={faCheck} style={{color: "#74C0FC"}} />;
@@ -24,14 +25,22 @@ interface dataProps {
         messages: MessagesInterface[],
         lastMessage?: string,
     }
+    selectedItemId: number | null,
+    setSelectedItemId: (id: number | null) => void,
 }
 
-export function ChatItem({data}: dataProps & { isOpen: boolean }) {
+export function ChatItem({data, selectedItemId, setSelectedItemId, ...rest}: dataProps) {
     data.lastMessage = data.messages.length > 0 ? data.messages[data.messages.length - 1].content : "";
+
+    const handleChatItemClick = (itemId: number) => {
+        setSelectedItemId(itemId);
+    };
 
     return (
         <Container
-            className={data.isOpen ? "Open" : ""}
+            className={selectedItemId === data.id ? "Open" : ""}
+            onClick={() => handleChatItemClick(data.id)}
+            {...rest}
         >
             <PictureUser>
                 <img

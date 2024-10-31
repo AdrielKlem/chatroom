@@ -37,13 +37,7 @@ function IconSendMessagem() {
   
 export function Home() {
     const [isClose, setIsClose] = useState(false)
-    const [openItemId, setOpenItemId] = useState(null)
-
-
-    const handleChatItemClick = (itemId) => {
-        setOpenItemId(itemId);
-    };
-
+    const [selectedItemId, setSelectedItemId] = useState<number | null>(null);
 
     return (
         <Container>
@@ -118,10 +112,10 @@ export function Home() {
                         {
                             chatData && chatData.map((chat) => (
                                 <ChatItem
-                                key={chat.id}
-                                data={chat}
-                                isOpen={openItemId === chat.id}
-                                onClick={() => handleChatItemClick(chat.id)}
+                                    key={chat.id}
+                                    data={chat}
+                                    selectedItemId={selectedItemId}
+                                    setSelectedItemId={setSelectedItemId} 
                                 />
                             ))
                         }
