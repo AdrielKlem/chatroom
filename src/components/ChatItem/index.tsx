@@ -26,7 +26,7 @@ interface dataProps {
     }
 }
 
-export function ChatItem({data}: dataProps) {
+export function ChatItem({data}: dataProps & { isOpen: boolean }) {
     data.lastMessage = data.messages.length > 0 ? data.messages[data.messages.length - 1].content : "";
 
     return (
