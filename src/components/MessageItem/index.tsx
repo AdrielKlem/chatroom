@@ -1,27 +1,29 @@
 import { Container, HeaderBox, MainBox } from "./styles"
 
 interface Props {
-    username: string
-    message: string;
-    time: string;
-    isSender?: boolean;
+    data: {
+        username: string
+        content: string,
+        isSending?: boolean;
+        timestamp?: string,
+    }
 }
 
-export function MessageItem({ username, message, time, isSender = false }: Props) {
+export function MessageItem({ data }: Props) {
     return (
         <Container 
-            isSender={isSender}
-            className={isSender ? "Sender" : "Receiver"}> 
+            isSender={data.isSending}
+            className={data.isSending ? "Sender" : "Receiver"}> 
             <HeaderBox
-                isSender={isSender}
+                isSender={data.isSending}
             >
-                <h4>{username}</h4>
-                <span>{time}</span>
+                <h4>{data.username}</h4>
+                <span>{data.timestamp}</span>
             </HeaderBox>
             <MainBox
-                isSender={isSender}
+                isSender={data.isSending}
             >
-                {message}
+                {data.content}
             </MainBox>
         </Container>
     )

@@ -146,17 +146,13 @@ export function Home() {
                         </UserAction>
                     </HeaderChat>
                     <MainChat>
-                        <MessageItem 
-                            username="John"
-                            message="Opa"
-                            time="12:30"
-                        />
-                         <MessageItem 
-                            isSender={true}
-                            username="John"
-                            message="Opa"
-                            time="12:30"
-                        />
+                        {
+                            chatData[3].id === 4 && chatData[3].messages.map((message) => (
+                                <MessageItem 
+                                    data={message}
+                                />
+                            ))
+                        }
                     </MainChat>
                     <FooterChat>
                         <form action="">

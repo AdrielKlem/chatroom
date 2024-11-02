@@ -9,8 +9,9 @@ function IconView() {
 
 
 interface MessagesInterface {
-    isSending: boolean,
+    username: string,
     content: string,
+    isSending: boolean,
     timestamp?: string,
 }
 
