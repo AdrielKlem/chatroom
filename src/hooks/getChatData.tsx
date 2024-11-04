@@ -37,13 +37,16 @@ export const chatData = [
         isOpen: false,
         messages: [
             {
+                username: "Fabio Gramer",
                 isSending: false,
                 content: "Olá! Como vai?",
-                timestamp: "30:11",
+                timestamp: "20:11",
             },
             {
+                username: "Você",
                 isSending: true,
-                content: "Oi, tudo bem e você?",
+                content: "Oi, suave?",
+                timestamp: "20:12",
             },
         ],
     },
