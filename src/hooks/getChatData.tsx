@@ -6,7 +6,18 @@ export const chatData = [
         pictureUser: './src/assets/UserAvatarDefault.png', // Use "pictureUser" aqui
         isOpen: true,
         messages: [
-            // ... mensagens da conversa ...
+             {
+                username: "Você",
+                isSending: true,
+                content: "Olá! Como vai?",
+                timestamp: "20:11",
+            },
+            {
+                username: "John Doe",
+                isSending: false,
+                content: "Que coisa né?",
+                timestamp: "20:12",
+            },
         ],
     },
     {
@@ -16,7 +27,18 @@ export const chatData = [
         pictureUser: 'https://picsum.photos/49',
         isOpen: false,
         messages: [
-            // ... mensagens da conversa ...
+             {
+                username: "Jane Doe",
+                isSending: false,
+                content: "Olá! Como vai?",
+                timestamp: "20:11",
+            },
+            {
+                username: "Você",
+                isSending: true,
+                content: "Oi, suave?",
+                timestamp: "20:12",
+            },
         ],
     },
     {
@@ -26,7 +48,18 @@ export const chatData = [
         pictureUser: 'https://picsum.photos/48',
         isOpen: false,
         messages: [
-            // ... mensagens da conversa ...
+             {
+                username: "Fabio Gramer",
+                isSending: false,
+                content: "Olá! Como vai?",
+                timestamp: "20:11",
+            },
+            {
+                username: "Você",
+                isSending: true,
+                content: "Oi, suave?",
+                timestamp: "20:12",
+            },
         ],
     },
     {

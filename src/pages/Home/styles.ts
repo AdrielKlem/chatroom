@@ -161,6 +161,13 @@ export const Chatting = styled.section`
     height: 100vh;
 `
 
+export const EmptyChat = styled.div`
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+`
+
 export const HeaderChat = styled.header`
     display: flex;
     align-items: center;
