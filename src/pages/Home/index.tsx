@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faComments, faUserGroup, faGear, faArrowRightFromBracket, faAnglesLeft, faSquarePhone, faVideo, faBars, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faComments, faUserGroup, faGear, faArrowRightFromBracket, faAnglesLeft, faSquarePhone, faVideo, faBars, faPaperPlane, faCommentDots } from '@fortawesome/free-solid-svg-icons'
 
 import { Container, Display, Menu, HeaderMenu, UserAvatar, MenuButton, MenuInput, MenuLabel, Inbox, FilterChat, FilterChatList, ChatList, Chatting, EmptyChat, HeaderChat, UserStatus, UserAction, MainChat, FooterChat, InputText, SubmitChat, Logout } from "./styles"
 import { ButtonNav } from "../../components/ButtonNav"
@@ -34,6 +34,9 @@ function IconSendMessagem() {
     return <FontAwesomeIcon icon={faPaperPlane} />
 }
 
+function IconCommentDots() {
+    return <FontAwesomeIcon icon={faCommentDots} />
+}
   
 export function Home() {
     const [isClose, setIsClose] = useState(false)
@@ -123,9 +126,10 @@ export function Home() {
                 </Inbox>
                 <Chatting>
                     <EmptyChat>
-                        Selecione uma conversa para estar com contatos com seus amigos e familiares
+                        <IconCommentDots />
+                        <p>Selecione uma conversa para estar com contatos com seus amigos e familiares</p>
                     </EmptyChat>
-                    {/* <HeaderChat>
+                     {/* <HeaderChat>
                         <UserStatus>
                             <div className='pictureUser'>
                                 <img
