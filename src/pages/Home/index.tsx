@@ -42,6 +42,9 @@ export function Home() {
     const [isClose, setIsClose] = useState(false)
     const [selectedItemId, setSelectedItemId] = useState<number | null>(null);
 
+                        console.log(selectedItemId)
+
+
     return (
         <Container>
             <Display
@@ -125,53 +128,61 @@ export function Home() {
                     </ChatList>
                 </Inbox>
                 <Chatting>
-                    <EmptyChat>
-                        <IconCommentDots />
-                        <p>Selecione uma conversa para estar com contatos com seus amigos e familiares</p>
-                    </EmptyChat>
-                     {/* <HeaderChat>
-                        <UserStatus>
-                            <div className='pictureUser'>
-                                <img
-                                    src={chatData[0].pictureUser}
-                                    alt="Foto usuário" />
-                            </div>
-                            <div className='nameUser'>
-                                {chatData[0].username}
-                            </div>
-                        </UserStatus>
-                        <UserAction>
-                            <div className="inputActionChat">
-                                <IconVideo />
-                            </div>
-                            <div className="inputActionChat">
-                                <IconCall />
-                            </div>
-                            <div className="inputActionChat">
-                                <IconConfigChat />
-                            </div>
-                        </UserAction>
-                    </HeaderChat>
-                    <MainChat>
-                        {
-                            chatData[3].id === 4 && chatData[3].messages.map((message) => (
-                                <MessageItem 
-                                    data={message}
-                                />
-                            ))
-                        }
-                    </MainChat>
-                    <FooterChat>
-                        <form action="">
-                            <InputText 
-                                type="text"
-                                placeholder='Digite uma mensagem'
-                                />
-                            <SubmitChat>
-                                <IconSendMessagem />
-                            </SubmitChat>
-                        </form>
-                    </FooterChat> */}
+                    { 
+                        !selectedItemId  ?
+                    
+                        <EmptyChat>
+                            <IconCommentDots />
+                            <p>Selecione uma conversa para estar com contatos com seus amigos e familiares</p>
+                        </EmptyChat>
+
+                    :          
+                        <>
+                            <HeaderChat>
+                                <UserStatus>
+                                    <div className='pictureUser'>
+                                        <img
+                                            src={chatData[0].pictureUser}
+                                            alt="Foto usuário" />
+                                    </div>
+                                    <div className='nameUser'>
+                                        {chatData[0].username}
+                                    </div>
+                                </UserStatus>
+                                <UserAction>
+                                    <div className="inputActionChat">
+                                        <IconVideo />
+                                    </div>
+                                    <div className="inputActionChat">
+                                        <IconCall />
+                                    </div>
+                                    <div className="inputActionChat">
+                                        <IconConfigChat />
+                                    </div>
+                                </UserAction>
+                            </HeaderChat>
+                            <MainChat>
+                                {
+                                    chatData[3].id === 4 && chatData[3].messages.map((message) => (
+                                        <MessageItem 
+                                            data={message}
+                                        />
+                                    ))
+                                }
+                            </MainChat>
+                            <FooterChat>
+                                <form action="">
+                                    <InputText 
+                                        type="text"
+                                        placeholder='Digite uma mensagem'
+                                        />
+                                    <SubmitChat>
+                                        <IconSendMessagem />
+                                    </SubmitChat>
+                                </form>
+                            </FooterChat>
+                        </>
+                    }
                 </Chatting>
             </Display>
         </Container>
