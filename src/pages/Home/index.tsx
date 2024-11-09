@@ -42,8 +42,6 @@ export function Home() {
     const [isClose, setIsClose] = useState(false)
     const [selectedItemId, setSelectedItemId] = useState<number | null>(null);
 
-                        console.log(selectedItemId)
-
 
     return (
         <Container>
@@ -129,24 +127,18 @@ export function Home() {
                 </Inbox>
                 <Chatting>
                     { 
-                        !selectedItemId  ?
-                    
-                        <EmptyChat>
-                            <IconCommentDots />
-                            <p>Selecione uma conversa para estar com contatos com seus amigos e familiares</p>
-                        </EmptyChat>
+                        selectedItemId || selectedItemId === 0  ?
 
-                    :          
                         <>
                             <HeaderChat>
                                 <UserStatus>
                                     <div className='pictureUser'>
                                         <img
-                                            src={chatData[0].pictureUser}
+                                            src={chatData[selectedItemId].pictureUser}
                                             alt="Foto usuário" />
                                     </div>
                                     <div className='nameUser'>
-                                        {chatData[0].username}
+                                        {chatData[selectedItemId].username}
                                     </div>
                                 </UserStatus>
                                 <UserAction>
@@ -163,7 +155,7 @@ export function Home() {
                             </HeaderChat>
                             <MainChat>
                                 {
-                                    chatData[3].id === 4 && chatData[3].messages.map((message) => (
+                                    chatData[selectedItemId].messages.map((message) => (
                                         <MessageItem 
                                             data={message}
                                         />
@@ -182,6 +174,12 @@ export function Home() {
                                 </form>
                             </FooterChat>
                         </>
+                            :          
+                    
+                        <EmptyChat>
+                            <IconCommentDots />
+                            <p>Selecione uma conversa para estar com contatos com seus amigos e familiares</p>
+                        </EmptyChat>
                     }
                 </Chatting>
             </Display>

@@ -24,7 +24,7 @@ interface dataProps {
         isOpen?: boolean,
         messages: MessagesInterface[],
         lastMessage?: string,
-    }
+    },
     selectedItemId: number | null,
     setSelectedItemId: (id: number | null) => void,
 }

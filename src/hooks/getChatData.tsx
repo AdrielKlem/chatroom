@@ -1,5 +1,26 @@
 export const chatData = [
     {
+        id: 0,
+        username: 'Keven MAn',
+        lastTime: '10:00',
+        pictureUser: 'https://picsum.photos/60',
+        isOpen: true,
+        messages: [
+             {
+                username: "Você",
+                isSending: true,
+                content: "AAAAAAAA!!!!!!!!!!",
+                timestamp: "20:11",
+            },
+            {
+                username: "John Doe",
+                isSending: false,
+                content: "Que coisa né?",
+                timestamp: "20:12",
+            },
+        ],
+    },
+    {
         id: 1,
         username: 'John Doe',
         lastTime: '10:00',
@@ -79,6 +100,27 @@ export const chatData = [
                 username: "Você",
                 isSending: true,
                 content: "Oi, suave?",
+                timestamp: "20:12",
+            },
+        ],
+    },
+    {
+        id: 5,
+        username: 'Keven Ben',
+        lastTime: '10:00',
+        pictureUser: 'https://picsum.photos/60',
+        isOpen: true,
+        messages: [
+             {
+                username: "Você",
+                isSending: true,
+                content: "Olá! Como vai?",
+                timestamp: "20:11",
+            },
+            {
+                username: "John Doe",
+                isSending: false,
+                content: "Que coisa né?",
                 timestamp: "20:12",
             },
         ],
