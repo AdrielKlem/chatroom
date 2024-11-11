@@ -27,9 +27,15 @@ export function LogIn() {
                     <Button
                         text="Conectar"
                         />
-                    <Link to="register">
-                        Não tem conta? Clica aqui!
-                    </Link>
+                    <footer>
+                        <Link to="register">
+                            Não tem conta? Clica aqui!
+                        </Link>
+                        <p>OU...</p>
+                        <Link to=''>
+                            Entre como visitante
+                        </Link>
+                    </footer>
                 </Form>
             </FormSection>
         </Container>
