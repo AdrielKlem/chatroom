@@ -1,6 +1,7 @@
 import { Container, Form, FormSection, Footer } from "./styles"
 import { Input } from "../../components/Input"
 import { Button } from "../../components/Button"
+import { QuestPopUp } from "../../components/QuestPopUp"
 
 import { Link } from "react-router-dom"
 
@@ -39,6 +40,7 @@ export function LogIn() {
                         >
                             Entre como visitante
                         </Link>
+                        <QuestPopUp />
                     </Footer>
                 </Form>
             </FormSection>
