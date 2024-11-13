@@ -1,4 +1,4 @@
-import { Container, Form, FormSection } from "./styles"
+import { Container, Form, FormSection, Footer } from "./styles"
 import { Input } from "../../components/Input"
 import { Button } from "../../components/Button"
 
@@ -27,15 +27,19 @@ export function LogIn() {
                     <Button
                         text="Conectar"
                         />
-                    <footer>
-                        <Link to="register">
+                    <Footer>
+                        <Link to="register"
+                            className="Action"
+                        >
                             Não tem conta? Clica aqui!
                         </Link>
                         <p>OU...</p>
-                        <Link to=''>
+                        <Link to=''
+                            className="Action"
+                        >
                             Entre como visitante
                         </Link>
-                    </footer>
+                    </Footer>
                 </Form>
             </FormSection>
         </Container>

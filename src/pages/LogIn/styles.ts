@@ -9,7 +9,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     `
-export const FormSection = styled.div `
+export const FormSection = styled.div`
     background-color: ${({ theme }) => theme.colors.thirdBackground};
     
     min-width: 56rem;
@@ -42,8 +42,19 @@ export const Form = styled.div`
 
     padding: 0 4rem;
     margin: 0 0 1.6rem;
+`
 
-    > a {
+export const Footer = styled.footer`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+
+    > p {
+        color: ${({ theme }) => theme.colors.thirdColor};
+    }
+
+    > .Action {
         transition: transform 0.5s ease-out;
         font-size: 1.6rem;
    
