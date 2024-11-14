@@ -3,7 +3,7 @@ import { Container } from "./styles.ts"
 
 
 
-export function QuestPopUp() {
+export function QuestPopUp({ ...rest }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const openPopup = () => {
@@ -16,15 +16,16 @@ export function QuestPopUp() {
 
 
     return (
-        <Container>
-
-            <button onClick={openPopup}>Abrir Pop-up</button>
+        <Container
+            {...rest}
+        >
+            <button onClick={openPopup}>Entre como visitante</button>
 
         {isOpen && (
             <div className="popup">
             <div className="popup-content">
                 <h2>AA</h2>
-                <p>AAAA</p>
+                <p>                            </p>
                 <button onClick={closePopup}>Botao</button>
             </div>
             </div>

@@ -14,6 +14,7 @@ export default createGlobalStyle`
   }
 
   button {
+    background: transparent;
     cursor: pointer;
     border: none;
   }

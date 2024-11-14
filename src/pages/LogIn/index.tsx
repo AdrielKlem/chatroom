@@ -35,12 +35,9 @@ export function LogIn() {
                             Não tem conta? Clica aqui!
                         </Link>
                         <p>OU...</p>
-                        <Link to=''
+                        <QuestPopUp
                             className="Action"
-                        >
-                            Entre como visitante
-                        </Link>
-                        <QuestPopUp />
+                        />
                     </Footer>
                 </Form>
             </FormSection>

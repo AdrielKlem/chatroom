@@ -53,8 +53,9 @@ export const Footer = styled.footer`
     > p {
         color: ${({ theme }) => theme.colors.thirdColor};
     }
-
-    > .Action {
+    
+    > .Action, button {
+        color: ${({ theme }) => theme.colors.actionColor};
         transition: transform 0.5s ease-out;
         font-size: 1.6rem;
    
